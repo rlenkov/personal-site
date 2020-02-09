@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background-color: rgba(54, 50, 50, 0.2);;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    width: 20vw;
+    height: 100%;
+}

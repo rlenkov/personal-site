@@ -1,0 +1,27 @@
+// Sliding basic
+$default-slide-in-time: 0.8s;
+$default-half-slide-in-time: calc(#{$default-slide-in-time} / 2);
+
+// Portfolio card animations
+$portfolio-card-transition-time: 0.3s;
+$portfolio-card-transition-scale: 0.96;
+$portfolio-card-transition-scale-negative: 1.04;
+
+// Header dropdown animations
+$header-dropdown-time: 0.35s;
+$header-item-base-time: 0.6s;
+$header-item-incrementer-time: 0.03s;
+
+$header-item-one-time: calc(#{$header-item-base-time});
+$header-item-two-time: calc(
+    #{$header-item-base-time} + (1 * #{$header-item-incrementer-time})
+);
+$header-item-three-time: calc(
+    #{$header-item-base-time} + (2 * #{$header-item-incrementer-time})
+);
+$header-item-four-time: calc(
+    #{$header-item-base-time} + (3 * #{$header-item-incrementer-time})
+);
+$header-item-five-time: calc(
+    #{$header-item-base-time} + (4 * #{$header-item-incrementer-time})
+);

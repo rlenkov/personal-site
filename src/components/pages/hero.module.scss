@@ -1,4 +1,57 @@
+@import '../../styles/custom.scss';
+
 .hero-container {
     background-color: rgb(212, 158, 158);
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.hero-content-box {
+    padding: 150px 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-image {
+    z-index: 0;
+}
+
+.hero-text-box {
+    padding-right: 50px;
+    flex-grow: 1;
+    h1 {
+        font-size: 10vw;
+        font-weight: bolder;
+    }
+    h2 {
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+}
+
+.changeling-text-box {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    max-width: 400px;
+    max-height: 3vw;
+    text-align: center;
+    overflow-wrap: normal;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sliding-titles {
+    display: inline-block;
+    -webkit-transition: transform 1s ease-in-out; /* Safari prior 6.1 */
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+}
+
+.changeling-text {
+    display: inline-block;
+    text-decoration: underline;
+    width: 400px;
+}
+
+.hero-image-box {
 }

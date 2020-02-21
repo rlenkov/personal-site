@@ -9,9 +9,17 @@ const Welcome = ({ runOpen }: Props) => {
     const [showed, setShowed] = useState(false)
 
     useEffect(() => {
+        const isClient =
+            typeof window === 'object' && typeof document === 'object'
+        if (isClient) {
+            document.body.style.overflow = 'hidden'
+            document.body.style.height = '100vh'
+        }
         const timer = setTimeout(() => {
             setShowed(true)
-        }, 4000)
+            document.body.style.overflow = 'visible'
+            document.body.style.height = 'unset'
+        }, 3000)
         return () => {
             clearTimeout(timer)
         }

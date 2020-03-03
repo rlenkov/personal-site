@@ -55,3 +55,25 @@
 
 .hero-image-box {
 }
+
+.exclam {
+    display: inline-block;
+    animation: rolling-icon 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    @keyframes rolling-icon {
+        0% {
+            transform: rotateZ(-10deg);
+            transform-origin: bottom center;
+            animation-timing-function: cubic-bezier(1, 0.5, 0.5, 0.5);
+        }
+        50% {
+            transform: rotateZ(30deg);
+            transform-origin: bottom center;
+            animation-timing-function: cubic-bezier(1, 0.5, 0.5, 0.5);
+        }
+        100% {
+            transform: rotateZ(-10deg);
+            transform-origin: bottom center;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+        }
+    }
+}

@@ -7,7 +7,7 @@
     left: 0;
     height: 100px;
     z-index: $header-z;
-    background-color: rgba(54, 50, 50, 0.2);;
+    // background-color: rgba(54, 50, 50, 0.2);;
 }
 
 .menu-box {
@@ -16,6 +16,9 @@
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    width: 20vw;
+    width: 30vw;
     height: 100%;
+    padding: 30px;
+    background-color: rgba(54, 50, 50, 0.2);
+    border-radius: 0 0 0 30px;
 }

@@ -1,0 +1,127 @@
+@import '../../styles/custom';
+
+.carousel-container {
+    position: relative;
+    background: transparent;
+    border: 3px solid black;
+    padding-bottom: 30px;
+    width: 50vw;
+}
+
+// inner individual image ITEM container
+.item-class {
+    border: 3px solid green;
+    height: 100px;
+}
+
+.container-class {
+    background-color: 3px solid red;
+}
+
+// inner slider container UL element
+.slider-class {
+    background-color: yellow;
+}
+
+$button-size-desktop: 6px;
+$button-size-tablet: 5px;
+$button-size-mobile: 5px;
+
+.active-button {
+    width: $button-size-desktop;
+    height: $button-size-desktop;
+    border-radius: $button-size-desktop;
+    background-color: black;
+    margin-right: 14px;
+}
+
+.inactive-button {
+    width: $button-size-desktop;
+    height: $button-size-desktop;
+    border-radius: $button-size-desktop;
+    background-color: grey;
+    margin-right: 14px;
+}
+
+// Buttons
+.active-button-inverted {
+    width: $button-size-desktop;
+    height: $button-size-desktop;
+    border-radius: $button-size-desktop;
+    background-color: white;
+    margin-right: 14px;
+}
+
+.inactive-button-inverted {
+    width: $button-size-desktop;
+    height: $button-size-desktop;
+    border-radius: $button-size-desktop;
+    background-color: #686868;
+    margin-right: 14px;
+}
+
+// Arrows
+.custom-right-arrow {
+    position: absolute !important;
+    right: -2.5vw;
+    z-index: 1;
+    border: 8px solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 15px;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transition: opacity 0.2s ease-in-out; /* Safari prior 6.1 */
+    transition: opacity 0.2s ease-in-out;
+}
+.custom-right-arrow:hover {
+    opacity: 1;
+}
+.custom-left-arrow {
+    position: absolute !important;
+    left: 30px;
+    z-index: 1;
+    border: 8px solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 15px;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: rotate(135deg);
+    -webkit-transition: opacity 0.2s ease-in-out; /* Safari prior 6.1 */
+    transition: opacity 0.2s ease-in-out;
+}
+.custom-left-arrow:hover {
+    opacity: 1;
+}
+
+// Arrows
+.custom-right-arrow-hidden {
+    position: absolute !important;
+    right: 30px;
+    z-index: 1;
+    border: 8px solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transition: opacity 0.2s ease-in-out; /* Safari prior 6.1 */
+    transition: opacity 0.2s ease-in-out;
+}
+.custom-left-arrow-hidden {
+    position: absolute !important;
+    left: 30px;
+    z-index: 1;
+    border: 8px solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transform: rotate(135deg);
+    -webkit-transition: opacity 0.2s ease-in-out; /* Safari prior 6.1 */
+    transition: opacity 0.2s ease-in-out;
+}

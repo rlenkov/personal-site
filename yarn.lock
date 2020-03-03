@@ -10676,6 +10676,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-multi-carousel@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.5.2.tgz#da6c0d68b9f264e56e63386cbbe66e174b13e4c4"
+  integrity sha512-dGDNAA1MmLZV+nvxvF8T2GlQnvv726jBdC/hLT7GD44PaL1ONE5nkKPrS/SeYvf5TLVxCUYzRyY7BMpUuQtXpw==
+
 react-reconciler@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.24.0.tgz#5a396b2c2f5efe8554134a5935f49f546723f2dd"

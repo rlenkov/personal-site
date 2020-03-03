@@ -78,7 +78,7 @@ const Hero = () => {
             <Welcome runOpen={animationStates.runOpeningAnimation} />
             <div className={heroStyles.heroContentBox}>
                 <div className={heroStyles.heroTextBox}>
-                    <h1>Hi There!</h1>
+                    <h1>Hi There<div className={heroStyles.exclam}>!</div></h1>
                     <h2>
                         I'm Richard a{' '}
                         <div className={heroStyles.changelingTextBox}>

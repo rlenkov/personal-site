@@ -74,7 +74,7 @@ const Hero = () => {
     }
 
     return (
-        <section className={heroStyles.heroContainer}>
+        <section id="hero" className={heroStyles.heroContainer}>
             <Welcome runOpen={animationStates.runOpeningAnimation} />
             <div className={heroStyles.heroContentBox}>
                 <div className={heroStyles.heroTextBox}>

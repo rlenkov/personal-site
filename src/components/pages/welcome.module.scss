@@ -8,13 +8,13 @@
     width: 100%;
     -webkit-transform: none;
     transform: none;
-    z-index: 100;
+    z-index: $over-header-z;
     // @include y-slide-delayed-opacity-reset(1s);
 }
 
 .welcome-container-slide {
     position: fixed;
-    z-index: 100;
+    z-index: $over-header-z;
     top: 0;
     background-color: rgb(43, 8, 88);
     height: 100vh;

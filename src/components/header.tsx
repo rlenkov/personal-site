@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import headerStyles from './header.module.scss'
 
@@ -9,9 +10,41 @@ interface Props {
 const Header = ({ siteTitle }: Props) => (
     <header className={headerStyles.header}>
         <div className={headerStyles.menuBox}>
-            <strong>One</strong>
-            <strong>Two</strong>
-            <strong>Three</strong>
+            <Link
+                to="#hero"
+                activeStyle={{ color: 'red' }}
+                partiallyActive={true}
+            >
+                Home
+            </Link>
+            <Link
+                to="#work"
+                activeStyle={{ color: 'red' }}
+                partiallyActive={true}
+            >
+                Work
+            </Link>
+            <Link
+                to="#portfolio"
+                activeStyle={{ color: 'red' }}
+                partiallyActive={true}
+            >
+                Portfolio
+            </Link>
+            <Link
+                to="#about"
+                activeStyle={{ color: 'red' }}
+                partiallyActive={true}
+            >
+                About
+            </Link>
+            <Link
+                to="#contact"
+                activeStyle={{ color: 'red' }}
+                partiallyActive={true}
+            >
+                Contact
+            </Link>
         </div>
     </header>
 )

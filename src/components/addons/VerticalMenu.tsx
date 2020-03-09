@@ -20,39 +20,49 @@ const VerticalMenu = props => {
                         props.setPage('hero')
                         navigate('/#hero')
                     }}
-                />
+                >
+                    <span>hero</span>
+                </div>
                 <div
                     className={getStyleFor('work')}
-                    style={{ top: '20px' }}
+                    style={{ top: '30px' }}
                     onClick={() => {
                         props.setPage('work')
                         navigate('/#work')
                     }}
-                />
+                >
+                    <span>work</span>
+                </div>
                 <div
                     className={getStyleFor('portfolio')}
-                    style={{ top: '40px' }}
+                    style={{ top: '60px' }}
                     onClick={() => {
                         props.setPage('portfolio')
                         navigate('/#portfolio')
                     }}
-                />
+                >
+                    <span>portfolio</span>
+                </div>
                 <div
                     className={getStyleFor('about')}
-                    style={{ top: '60px' }}
+                    style={{ top: '90px' }}
                     onClick={() => {
                         props.setPage('about')
                         navigate('/#about')
                     }}
-                />
+                >
+                    <span>about</span>
+                </div>
                 <div
                     className={getStyleFor('contact')}
-                    style={{ top: '80px' }}
+                    style={{ top: '120px' }}
                     onClick={() => {
                         props.setPage('contact')
                         navigate('/#contact')
                     }}
-                />
+                >
+                    <span>contact</span>
+                </div>
             </div>
         </div>
     )

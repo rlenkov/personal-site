@@ -10,3 +10,15 @@
     letter-spacing: normal;
     color: $new-dark-grey;
 }
+
+
+@mixin tiny-header-desktop {
+    font-family: 'Biryani';
+    font-size: 10px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: $new-dark-grey;
+}

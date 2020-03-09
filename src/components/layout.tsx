@@ -12,7 +12,7 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-    const { scrollX, scrollY, scrollDirection } = useScroll()
+    const { scrollY } = useScroll()
     const [localElements, setLocalElements] = useState(null)
 
     const isClient = typeof window === 'object' && typeof document === 'object'

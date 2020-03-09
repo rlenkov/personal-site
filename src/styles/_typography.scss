@@ -22,6 +22,28 @@
     color: $new-dark-grey;
 }
 
+@mixin large-topic-desktop {
+    font-family: 'Biryani';
+    font-size: 84px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: $new-dark-grey;
+}
+
+@mixin main-text-desktop {
+    font-family: 'Biryani';
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: $new-dark-grey;
+}
+
 
 @mixin tiny-header-desktop {
     font-family: 'Biryani';

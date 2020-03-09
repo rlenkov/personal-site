@@ -1,16 +1,51 @@
+@import '../../styles/custom.scss';
+
 .work-container {
-    background-color: rgb(177, 212, 177);
-    height: 100vh;
+    background-color: $new-space;
+    height: 900px;
+}
+
+.work-content-box {
+    padding: 100px 200px 100px 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-block {
+    margin-left: 50px;
+    h1 {
+        @include large-topic-desktop;
+        color: $new-white;
+        margin-bottom: 0;
+    }
+    h1:nth-child(1) {
+        margin-left: 0;
+    }
+    h1:nth-child(2) {
+        margin-left: 50px;
+    }
+    h1:nth-child(3) {
+        margin-left: 100px;
+    }
+}
+
+.description {
+    margin-top: 50px;
+    p {
+        @include main-text-desktop;
+        color: $new-white;
+    }
 }
 
 .carousel-block {
     width: 35vw;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 27vw;
     padding-top: 3vw;
-    margin: auto;
-    border: 3px solid white;
+    border: 2px solid $new-aquamarine;
     background-color: transparent;
-    border-radius: 18vw;
+    border-radius: 5vw;
     overflow: hidden;
 }
 

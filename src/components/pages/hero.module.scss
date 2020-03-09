@@ -2,11 +2,11 @@
 
 .hero-container {
     background-color: $new-space;
-    min-height: 100vh;
+    height: 900px;
 }
 
 .hero-content-box {
-    padding: 150px 300px;
+    padding: 100px 200px 100px 300px;
     display: flex;
     flex-direction: row;
 }
@@ -41,7 +41,7 @@
     background-color: black;
     color: white;
     max-width: 400px;
-    padding: 7px 0;
+    padding: 7px 0 1px 0;
     text-align: center;
     overflow-wrap: normal;
     white-space: nowrap;

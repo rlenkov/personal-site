@@ -21,19 +21,28 @@ const Work = () => {
     }
     return (
         <section id="work" className={workStyles.workContainer}>
-            <h1>Work part</h1>
-            <div className={workStyles.carouselBlock}>
-                <Carousel
-                    // autoPlay
-                    // autoPlaySpeed={2000}
-                    infinite
-                    carouselContainer={workStyles.carouselContainer}
-                    containerClass={workStyles.containerClass}
-                    itemClass={workStyles.itemClass}
-                    sliderClass={workStyles.sliderClass}
-                >
-                    {getScrollBoxes()}
-                </Carousel>
+            <div className={workStyles.workContentBox}>
+                <div className={workStyles.carouselBlock}>
+                    <Carousel
+                        // autoPlay
+                        // autoPlaySpeed={2000}
+                        infinite
+                        carouselContainer={workStyles.carouselContainer}
+                        containerClass={workStyles.containerClass}
+                        itemClass={workStyles.itemClass}
+                        sliderClass={workStyles.sliderClass}
+                    >
+                        {getScrollBoxes()}
+                    </Carousel>
+                </div>
+                <div className={workStyles.textBlock}>
+                    <h1>The things</h1>
+                    <h1>we could</h1>
+                    <h1>create..!?</h1>
+                    <div className={workStyles.description}>
+                        <p>Get a developer who can do it all.</p>
+                    </div>
+                </div>
             </div>
         </section>
     )

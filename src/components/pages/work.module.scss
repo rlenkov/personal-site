@@ -79,6 +79,7 @@
     background-color: transparent;
     border-radius: 5vw;
     overflow: hidden;
+    cursor: grab;
 }
 
 .stepBox {
@@ -90,6 +91,10 @@
         @include middle-title-desktop;
         text-align: center;
         color: $new-white;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
     }
 }
 
@@ -102,6 +107,10 @@
     flex-grow: 0;
     flex-shrink: 0;
     width: 50%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 .carousel-text {
     flex-grow: 0;
@@ -116,6 +125,10 @@
         @include main-text-desktop;
         color: $new-white;
         line-height: 1.5;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
     }
 }
 

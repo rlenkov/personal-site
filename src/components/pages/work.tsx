@@ -1,4 +1,7 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Carousel from '../addons/carousel'
 import useWindowSize from '../../custom-hooks/useWindowSize'
 import workStyles from './work.module.scss'
@@ -10,11 +13,46 @@ const Work = () => {
         return result
     }
 
+    const data = useStaticQuery(graphql`
+        query {
+            allContentfulWorkCarouselItem {
+                edges {
+                    node {
+                        title
+                        description {
+                            json
+                        }
+                        image {
+                            fixed(width: 300) {
+                                width
+                                height
+                                src
+                                srcSet
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `)
+
     const getScrollBoxes = () => {
-        return [1, 2, 3, 4, 5, 6].map(item => {
+        return data.allContentfulWorkCarouselItem.edges.map(element => {
             return (
                 <div className={workStyles.stepBox} draggable={false}>
-                    <p>{`item: ${item}`}</p>
+                    <h3>{element.node.title}</h3>
+                    <div className={workStyles.carouselMedia}>
+                        <Img
+                            className={workStyles.carouselImage}
+                            fixed={element.node.image.fixed}
+                            draggable={false}
+                        />
+                        <div className={workStyles.carouselText}>
+                            {documentToReactComponents(
+                                element.node.description.json
+                            )}
+                        </div>
+                    </div>
                 </div>
             )
         })
@@ -36,6 +74,8 @@ const Work = () => {
                     </Carousel>
                 </div>
                 <div className={workStyles.textBlock}>
+                    <div className={workStyles.decorationBoxLarge} />
+                    <div className={workStyles.decorationBoxSmall} />
                     <h1>The things</h1>
                     <h1>we could</h1>
                     <h1>create..!?</h1>
@@ -43,6 +83,11 @@ const Work = () => {
                         <p>Get a developer who can do it all.</p>
                     </div>
                 </div>
+            </div>
+            <div className={workStyles.hiddenOutline}>
+                <h1 unselectable="on">The things</h1>
+                <h1 unselectable="on">we could</h1>
+                <h1 unselectable="on">create..!?</h1>
             </div>
         </section>
     )

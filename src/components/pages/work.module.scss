@@ -3,28 +3,31 @@
 .work-container {
     background-color: $new-space;
     height: 900px;
+    min-height: 110vh;
+    overflow: hidden;
 }
 
 .work-content-box {
-    padding: 100px 200px 100px 300px;
+    padding: 100px 200px 50px 300px;
     display: flex;
     flex-direction: row;
 }
 
 .text-block {
+    position: relative;
     margin-left: 50px;
     h1 {
         @include large-topic-desktop;
         color: $new-white;
         margin-bottom: 0;
     }
-    h1:nth-child(1) {
-        margin-left: 0;
+    h1:nth-of-type(1) {
+        margin-left: 10px;
     }
-    h1:nth-child(2) {
+    h1:nth-of-type(2) {
         margin-left: 50px;
     }
-    h1:nth-child(3) {
+    h1:nth-of-type(3) {
         margin-left: 100px;
     }
 }
@@ -37,7 +40,36 @@
     }
 }
 
+.hidden-outline {
+    padding: 0 10vw;
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    h1 {
+        @include gigantic-decoration-desktop($new-space, $new-dark-grey);
+        color: $new-white;
+        position: absolute;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+    h1:nth-child(1) {
+        left: 10vw;
+        top: 20px;
+    }
+    h1:nth-child(2) {
+        left: 30vw;
+        top: 80px;
+    }
+    h1:nth-child(3) {
+        left: 50vw;
+        top: 160px;
+    }
+}
+
 .carousel-block {
+    position: relative;
     width: 35vw;
     flex-grow: 0;
     flex-shrink: 0;
@@ -53,8 +85,38 @@
     width: 30vw;
     height: 20vw;
     padding: 10px;
-    border: 3px solid green;
     color: white;
+    h3 {
+        @include middle-title-desktop;
+        text-align: center;
+        color: $new-white;
+    }
+}
+
+.carousel-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel-image {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 50%;
+}
+.carousel-text {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 5px;
+    p {
+        display: block;
+        @include main-text-desktop;
+        color: $new-white;
+        line-height: 1.5;
+    }
 }
 
 // CAROUSEL
@@ -82,4 +144,24 @@
 // inner slider container UL element
 .slider-class {
     background-color: transparent;
+}
+
+.decoration-box-large {
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    width: 50px;
+    height: 50px;
+    padding: 50px;
+    background-color: $new-aquamarine;
+}
+
+.decoration-box-small {
+    position: absolute;
+    bottom: -30px;
+    right: 100px;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    background-color: $new-coral;
 }

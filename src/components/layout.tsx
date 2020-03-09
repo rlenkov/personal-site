@@ -5,6 +5,7 @@ import useScroll from '../custom-hooks/useScroll'
 
 import Header from './header'
 import Footer from './footer'
+import VerticalMenu from './addons/VerticalMenu'
 import './layout.css'
 
 interface Props {
@@ -14,6 +15,17 @@ interface Props {
 const Layout = ({ children }: Props) => {
     const { scrollY } = useScroll()
     const [localElements, setLocalElements] = useState(null)
+    const [localPage, setLocalPage] = useState('hero')
+
+    const pageSetter = page => {
+        if (!page) {
+            return
+        }
+        const pages = ['hero', 'work', 'portfolio', 'about', 'contact']
+        if (localPage !== page && pages.includes(page)) {
+            setLocalPage(page)
+        }
+    }
 
     const isClient = typeof window === 'object' && typeof document === 'object'
     useEffect(() => {
@@ -36,10 +48,17 @@ const Layout = ({ children }: Props) => {
         }
     `)
 
+    if (localElements) {
+        localElements.forEach(element => {
+            pageSetter(element.id)
+        })
+    }
+
     return (
         <React.Fragment>
             <Header siteTitle={data.site.siteMetadata.title} />
             <ScrollProvider value={scrollY}>
+                <VerticalMenu setPage={pageSetter} page={localPage} />
                 <main>{children}</main>
             </ScrollProvider>
             <Footer />

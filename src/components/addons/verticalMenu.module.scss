@@ -1,0 +1,39 @@
+@import '../../styles/custom';
+
+.menuBox {
+    position: fixed;
+    border-right: 2px solid $new-aquamarine;
+    height: 100vh;
+    width: 5vw;
+    z-index: $header-z;
+}
+
+.menu-options-box {
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+}
+
+.click-stick-active {
+    position: absolute;
+    right: 0px;
+    width: 40px;
+    height: 3px;
+    border: 3px solid $new-aquamarine;
+    cursor: pointer;
+    &:hover {
+        border-color: $new-white;
+    }
+}
+
+.click-stick {
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    height: 2px;
+    border: 2px solid $new-aquamarine;
+    cursor: pointer;
+    &:hover {
+        border-color: $new-white;
+    }
+}

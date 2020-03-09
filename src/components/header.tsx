@@ -11,35 +11,35 @@ const Header = ({ siteTitle }: Props) => (
     <header className={headerStyles.header}>
         <div className={headerStyles.menuBox}>
             <Link
-                to="#hero"
+                to="/#hero"
                 activeStyle={{ color: 'red' }}
                 partiallyActive={true}
             >
                 Home
             </Link>
             <Link
-                to="#work"
+                to="/#work"
                 activeStyle={{ color: 'red' }}
                 partiallyActive={true}
             >
                 Work
             </Link>
             <Link
-                to="#portfolio"
+                to="/#portfolio"
                 activeStyle={{ color: 'red' }}
                 partiallyActive={true}
             >
                 Portfolio
             </Link>
             <Link
-                to="#about"
+                to="/#about"
                 activeStyle={{ color: 'red' }}
                 partiallyActive={true}
             >
                 About
             </Link>
             <Link
-                to="#contact"
+                to="/#contact"
                 activeStyle={{ color: 'red' }}
                 partiallyActive={true}
             >

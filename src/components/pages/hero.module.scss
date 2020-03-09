@@ -1,7 +1,7 @@
 @import '../../styles/custom.scss';
 
 .hero-container {
-    background-color: rgb(212, 158, 158);
+    background-color: $new-space;
     min-height: 100vh;
 }
 
@@ -17,22 +17,31 @@
 
 .hero-text-box {
     padding-right: 50px;
+    height: 500px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
     h1 {
         @include large-header-desktop;
+        color: $new-white;
     }
     h2 {
-        font-size: 3vw;
-        font-weight: bolder;
+        @include large-hero-desktop;
+        color: $new-white;
     }
 }
 
 .changeling-text-box {
+    position: relative;
     display: inline-block;
+    vertical-align: bottom;
     background-color: black;
     color: white;
     max-width: 400px;
-    max-height: 3vw;
+    padding: 7px 0;
     text-align: center;
     overflow-wrap: normal;
     white-space: nowrap;
@@ -41,6 +50,7 @@
 
 .sliding-titles {
     display: inline-block;
+    vertical-align: bottom;
     -webkit-transition: transform 1s ease-in-out; /* Safari prior 6.1 */
     transition: transform 1s ease-in-out;
     will-change: transform;
@@ -48,6 +58,7 @@
 
 .changeling-text {
     display: inline-block;
+    vertical-align: bottom;
     text-decoration: underline;
     width: 400px;
 }
@@ -57,6 +68,7 @@
 
 .exclam {
     display: inline-block;
+    color: $new-aquamarine;
     animation: rolling-icon 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
     @keyframes rolling-icon {
         0% {

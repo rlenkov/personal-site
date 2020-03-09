@@ -11,6 +11,17 @@
     color: $new-dark-grey;
 }
 
+@mixin large-hero-desktop {
+    font-family: 'Biryani';
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: $new-dark-grey;
+}
+
 
 @mixin tiny-header-desktop {
     font-family: 'Biryani';

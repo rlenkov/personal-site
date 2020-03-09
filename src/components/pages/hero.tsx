@@ -78,15 +78,21 @@ const Hero = () => {
             <Welcome runOpen={animationStates.runOpeningAnimation} />
             <div className={heroStyles.heroContentBox}>
                 <div className={heroStyles.heroTextBox}>
-                    <h1>Hi There<div className={heroStyles.exclam}>!</div></h1>
-                    <h2>
-                        I'm Richard a{' '}
-                        <div className={heroStyles.changelingTextBox}>
-                            {getSlidingTitles()}
-                        </div>
-                        ,
-                    </h2>
-                    <h2>ready to get job done for you!</h2>
+                    <div>
+                        <h1>
+                            Hi There<div className={heroStyles.exclam}>!</div>
+                        </h1>
+                    </div>
+                    <div>
+                        <h2>
+                            I'm Richard Lenkovits, a{' '}
+                            <div className={heroStyles.changelingTextBox}>
+                                {getSlidingTitles()}
+                            </div>
+                            ,
+                        </h2>
+                        <h2>ready to get work done for you!</h2>
+                    </div>
                 </div>
                 <div className={heroStyles.heroImageBox}>
                     <Img

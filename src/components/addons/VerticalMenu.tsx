@@ -25,7 +25,7 @@ const VerticalMenu = props => {
                 </div>
                 <div
                     className={getStyleFor('work')}
-                    style={{ top: '30px' }}
+                    style={{ top: '40px' }}
                     onClick={() => {
                         props.setPage('work')
                         navigate('/#work')
@@ -34,18 +34,8 @@ const VerticalMenu = props => {
                     <span>work</span>
                 </div>
                 <div
-                    className={getStyleFor('portfolio')}
-                    style={{ top: '60px' }}
-                    onClick={() => {
-                        props.setPage('portfolio')
-                        navigate('/#portfolio')
-                    }}
-                >
-                    <span>portfolio</span>
-                </div>
-                <div
                     className={getStyleFor('about')}
-                    style={{ top: '90px' }}
+                    style={{ top: '80px' }}
                     onClick={() => {
                         props.setPage('about')
                         navigate('/#about')

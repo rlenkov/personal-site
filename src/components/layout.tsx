@@ -21,7 +21,7 @@ const Layout = ({ children }: Props) => {
         if (!page) {
             return
         }
-        const pages = ['hero', 'work', 'portfolio', 'about', 'contact']
+        const pages = ['hero', 'work', 'about', 'contact']
         if (localPage !== page && pages.includes(page)) {
             setLocalPage(page)
         }

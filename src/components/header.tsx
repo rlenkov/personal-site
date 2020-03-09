@@ -25,13 +25,6 @@ const Header = ({ siteTitle }: Props) => (
                 Work
             </Link>
             <Link
-                to="/#portfolio"
-                activeStyle={{ color: 'red' }}
-                partiallyActive={true}
-            >
-                Portfolio
-            </Link>
-            <Link
                 to="/#about"
                 activeStyle={{ color: 'red' }}
                 partiallyActive={true}

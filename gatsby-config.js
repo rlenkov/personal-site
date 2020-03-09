@@ -23,6 +23,18 @@ module.exports = {
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
             },
         },
+        {
+            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            options: {
+                fonts: [
+                    {
+                        family: `Biryani`,
+                        subsets: [`latin`],
+                        variants: [`200`, `300`, `400`, `600`, `700`, `800`],
+                    },
+                ],
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-typescript`,

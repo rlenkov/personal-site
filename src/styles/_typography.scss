@@ -1,0 +1,12 @@
+@import "colors";
+
+@mixin large-header-desktop {
+    font-family: 'Biryani';
+    font-size: 164px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: $new-dark-grey;
+}

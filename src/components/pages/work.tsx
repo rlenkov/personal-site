@@ -4,10 +4,12 @@ import Img from 'gatsby-image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Carousel from '../addons/carousel'
 import useWindowSize from '../../custom-hooks/useWindowSize'
+import useMouseOver from '../../custom-hooks/useMouseOver'
 import workStyles from './work.module.scss'
 
 const Work = () => {
     const size = useWindowSize()
+    const isMouseOver = useMouseOver('work-carousel-box')
     const vwTOpx = value => {
         const result = (size.width * value) / 100
         return result
@@ -60,10 +62,14 @@ const Work = () => {
     return (
         <section id="work" className={workStyles.workContainer}>
             <div className={workStyles.workContentBox}>
-                <div className={workStyles.carouselBlock}>
+                <div
+                    className={workStyles.carouselBlock}
+                    id="work-carousel-box"
+                >
                     <Carousel
                         // autoPlay
                         // autoPlaySpeed={2000}
+                        isMouseOver={isMouseOver}
                         infinite
                         carouselContainer={workStyles.carouselContainer}
                         containerClass={workStyles.containerClass}

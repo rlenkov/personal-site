@@ -20,7 +20,27 @@
 }
 
 .skill-collections {
-    // pass
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 50%;
+    h4 {
+        @include small-header-desktop;
+    }
+    h3 {
+        @include large-thin-desktop;
+    }
+}
+
+.skill {
+    cursor: pointer;
+}
+
+.skill:hover {
+    color: $new-coral;
+}
+
+.separator {
+    color: $new-coral;
 }
 
 .about-image-box {

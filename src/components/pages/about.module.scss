@@ -1,4 +1,28 @@
+@import '../../styles/custom.scss';
+
 .about-container {
-    background-color: rgb(211, 190, 162);
-    height: 100vh;
+    background-color: $new-semi-white;
+    height: 900px;
+}
+
+.about-headline {
+    margin-left: 300px;
+    padding-top: 100px;
+    h1 {
+        @include large-topic-desktop;
+    }
+}
+
+.about-content-box {
+    padding: 100px 200px 100px 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-collections {
+    // pass
+}
+
+.about-image-box {
+    // pass
 }

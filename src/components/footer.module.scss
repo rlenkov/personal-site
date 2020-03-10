@@ -1,9 +1,11 @@
 @import '../styles/custom';
 
 .footer {
+    position: relative;
     width: 100%;
     height: 400px;
     background-color: $new-space;
+    z-index: $over-all-z;
 }
 
 .map-box {

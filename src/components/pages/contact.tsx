@@ -3,7 +3,12 @@ import contactStyles from './contact.module.scss'
 
 const Contact = () => (
     <section id="contact" className={contactStyles.contactContainer}>
-        <h1>Contact part</h1>
+        <div className={contactStyles.contactHeadline}>
+            <h1>Find me online!</h1>
+        </div>
+        <div className={contactStyles.contactContentBox}>
+            <p>Facebook, insta, linkedin</p>
+        </div>
     </section>
 )
 

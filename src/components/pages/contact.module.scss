@@ -1,4 +1,20 @@
+@import '../../styles/custom';
+
 .contact-container {
-    background-color: rgb(211, 162, 192);
-    height: 100vh;
+    background-color: $new-semi-white;
+    height: 900px;
+}
+
+.contact-headline {
+    margin-left: 300px;
+    padding-top: 100px;
+    h1 {
+        @include large-topic-desktop;
+    }
+}
+
+.contact-content-box {
+    padding: 100px 200px 100px 300px;
+    display: flex;
+    flex-direction: row;
 }

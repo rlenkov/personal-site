@@ -12,7 +12,7 @@ const VerticalMenu = props => {
     }
 
     return (
-        <div className={styles.menuBox}>
+        <div className={props.isDark ? styles.menuBox : styles.menuBoxLight}>
             <div className={styles.menuOptionsBox}>
                 <div
                     className={getStyleFor('hero')}

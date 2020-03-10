@@ -61,3 +61,23 @@
         }
     }
 }
+
+.menuBoxLight {
+    position: fixed;
+    border-right: 2px solid $new-dark-grey;
+    height: 100vh;
+    width: 200px;
+    z-index: $header-z;
+    .click-stick {
+        border: 1px solid $new-dark-grey;
+        span {
+            color: $new-dark-grey;
+        }
+    }
+    .click-stick-active {
+        border: 2px solid $new-dark-grey;
+        span {
+            color: $new-dark-grey;
+        }
+    }
+}

@@ -5,6 +5,7 @@ module.exports = {
         title: `Richard Lenkovits`,
         description: `Developer site of Richard Lenkovits.`,
         author: `@pencillr`,
+        mapsKey: process.env.GOOGLE_API_TOKEN,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

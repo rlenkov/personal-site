@@ -2,12 +2,17 @@
 
 .footer {
     width: 100%;
-    height: 200px;
+    height: 400px;
     background-color: $new-space;
 }
 
+.map-box {
+    height: 300px;
+    cursor: default;
+}
+
 .footer-box {
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
     p {
         @include tiny-header-desktop;

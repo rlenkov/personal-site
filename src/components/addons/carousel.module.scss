@@ -64,6 +64,7 @@ $button-size-mobile: 5px;
 .custom-right-arrow {
     position: absolute !important;
     right: -2.5vw;
+    // bottom: 10px;
     z-index: 1;
     border: 8px solid $new-aquamarine;
     border-width: 0 5px 5px 0;
@@ -81,6 +82,7 @@ $button-size-mobile: 5px;
 .custom-left-arrow {
     position: absolute !important;
     left: 30px;
+    // bottom: 10px;
     z-index: 1;
     border: 8px solid $new-aquamarine;
     border-width: 0 5px 5px 0;
@@ -99,7 +101,8 @@ $button-size-mobile: 5px;
 // Arrows
 .custom-right-arrow-hidden {
     position: absolute !important;
-    left: 30px;
+    right: -2.5vw;
+    // bottom: 10px;
     z-index: 1;
     border: 8px solid $new-aquamarine;
     border-width: 0 5px 5px 0;
@@ -107,13 +110,14 @@ $button-size-mobile: 5px;
     padding: 15px;
     opacity: 0;
     cursor: pointer;
-    transform: rotate(135deg);
+    transform: rotate(-45deg);
     -webkit-transition: opacity 0.2s ease-in-out; /* Safari prior 6.1 */
     transition: opacity 0.2s ease-in-out;
 }
 .custom-left-arrow-hidden {
     position: absolute !important;
     left: 30px;
+    // bottom: 10px;
     z-index: 1;
     border: 8px solid $new-aquamarine;
     border-width: 0 5px 5px 0;

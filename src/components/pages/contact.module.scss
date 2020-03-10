@@ -1,11 +1,13 @@
 @import '../../styles/custom';
 
 .contact-container {
+    position: relative;
     background-color: $new-semi-white;
     height: 900px;
 }
 
 .contact-headline {
+    position: relative;
     margin-left: 300px;
     padding-top: 100px;
     h1 {
@@ -13,8 +15,40 @@
     }
 }
 
+.title {
+    position: relative;
+    z-index: $over-base-z;
+    .colored {
+        color: $new-white;
+    }
+}
+
 .contact-content-box {
     padding: 100px 200px 100px 300px;
     display: flex;
     flex-direction: row;
+}
+
+
+.decoration-box-large {
+    z-index: $base-z;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    right: 131px;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    padding: 100px;
+    background-color: $new-coral;
+}
+
+.decoration-box-small {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    background-color: $new-coral;
 }

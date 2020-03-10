@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import aboutStyles from './about.module.scss'
 
 const About = () => {
+    const [skillBox, setSkillBox] = useState(null)
     const data = useStaticQuery(graphql`
         query {
             contentfulAsset(
@@ -19,6 +20,23 @@ const About = () => {
             }
         }
     `)
+
+    const getSkillBox = skill => {
+        if (skill) {
+            return (
+                <div className={aboutStyles.skillDescribeBox}>
+                    <p>Skills Here for: {skill}</p>
+                </div>
+            )
+        }
+        return (
+            <Img
+                className={aboutStyles.profileImage}
+                fixed={data.contentfulAsset.fixed}
+            />
+        )
+    }
+
     const getSkillsBox = () => {
         const skills = [
             'JAVASCRIPT',
@@ -35,7 +53,22 @@ const About = () => {
         const skillSpans = skills.map(skill => {
             return (
                 <React.Fragment key={`key-skill-tables-${skill}`}>
-                    <span className={aboutStyles.skill}>{skill}</span>
+                    <span
+                        className={
+                            skill === skillBox
+                                ? aboutStyles.skillActive
+                                : aboutStyles.skill
+                        }
+                        onClick={() => {
+                            if (skill === skillBox) {
+                                setSkillBox(null)
+                            } else {
+                                setSkillBox(skill)
+                            }
+                        }}
+                    >
+                        {skill}
+                    </span>
                     <span className={aboutStyles.separator}>|</span>
                 </React.Fragment>
             )
@@ -53,10 +86,7 @@ const About = () => {
                     {getSkillsBox()}
                 </div>
                 <div className={aboutStyles.aboutImageBox}>
-                    <Img
-                        className={aboutStyles.profileImage}
-                        fixed={data.contentfulAsset.fixed}
-                    />
+                    {getSkillBox(skillBox)}
                 </div>
             </div>
         </section>

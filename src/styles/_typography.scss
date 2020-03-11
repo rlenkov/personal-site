@@ -80,6 +80,17 @@
     color: $new-dark-grey;
 }
 
+@mixin main-bolder-text-desktop {
+    font-family: 'Biryani';
+    font-size: 18px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: $new-dark-grey;
+}
+
 
 @mixin middle-title-desktop {
     font-family: 'Biryani';

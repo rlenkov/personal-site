@@ -13,7 +13,7 @@ const VerticalMenu = props => {
 
     return (
         <div className={props.isDark ? styles.menuBox : styles.menuBoxLight}>
-            <div className={styles.menuOptionsBox}>
+            <nav className={styles.menuOptionsBox}>
                 <div
                     className={getStyleFor('hero')}
                     onClick={() => {
@@ -53,7 +53,7 @@ const VerticalMenu = props => {
                 >
                     <span>contact</span>
                 </div>
-            </div>
+            </nav>
         </div>
     )
 }

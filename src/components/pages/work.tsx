@@ -41,7 +41,39 @@ const Work = props => {
         }
     `)
 
+    const isTablet = () => {
+        if (size) {
+            return size.width <= 1300
+        }
+    }
+
+    const isSmallWidth = () => {
+        if (size) {
+            return size.width <= 1700
+        }
+    }
+
+    const isPhone = () => {
+        if (size) {
+            return size.width <= 600
+        }
+    }
+
     const getScrollBoxes = () => {
+        let imageStyle = isSmallWidth()
+            ? { width: '150px', height: '150px', objectFit: 'cover' }
+            : {}
+        imageStyle = isTablet()
+            ? { width: '200px', height: '200px', objectFit: 'cover' }
+            : imageStyle
+        imageStyle = isPhone()
+            ? {
+                  width: '300px',
+                  height: '300px',
+                  objectFit: 'cover',
+                  margin: 'auto',
+              }
+            : imageStyle
         return data.allContentfulWorkAspects.edges
             .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
             .map(element => {
@@ -53,6 +85,7 @@ const Work = props => {
                                 className={workStyles.carouselImage}
                                 fixed={element.node.image.fixed}
                                 draggable={false}
+                                style={imageStyle}
                             />
                             <div className={workStyles.carouselText}>
                                 {documentToReactComponents(
@@ -79,13 +112,17 @@ const Work = props => {
         transform: `translateY(-${scrollY / 5}px)`,
         transition: 'transform 0.5s ease',
     }
+    const boxScrollTransformD = {
+        transform: `translateY(-${scrollY / 15}px)`,
+        transition: 'transform 0.5s ease',
+    }
 
     return (
         <section id="work" className={workStyles.workContainer}>
             <div className={workStyles.workContentBox}>
                 <div
                     className={workStyles.decorationBoxMedium}
-                    style={boxScrollTransformA}
+                    style={boxScrollTransformD}
                 />
                 <div
                     className={workStyles.decorationBoxLittle}
@@ -109,10 +146,12 @@ const Work = props => {
                     </Carousel>
                 </div>
                 <div className={workStyles.textBlock}>
-                    <div
-                        className={workStyles.decorationBoxLarge}
-                        style={boxScrollTransformA}
-                    />
+                    {isTablet() ? null : (
+                        <div
+                            className={workStyles.decorationBoxLarge}
+                            style={boxScrollTransformA}
+                        />
+                    )}
                     <div
                         className={workStyles.decorationBoxSmall}
                         style={boxScrollTransformB}

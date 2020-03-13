@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 @mixin large-header-desktop {
     font-family: 'Biryani';
@@ -9,10 +9,10 @@
     line-height: 1.09;
     letter-spacing: normal;
     color: $new-dark-grey;
-    @include for-small-desktop{
+    @include for-small-desktop {
         font-size: 104px;
     }
-    @include for-tablet-only{
+    @include for-tablet-only {
         font-size: 64px;
     }
 }
@@ -26,13 +26,13 @@
     line-height: 1.09;
     letter-spacing: normal;
     color: $new-dark-grey;
-    @include for-small-desktop{
-        font-size: 104px;
+    @include for-small-desktop {
+        font-size: 84px;
     }
-    @include for-tablet-only{
+    @include for-tablet-only {
         font-size: 64px;
     }
-    @include for-phone-only{
+    @include for-phone-only {
         font-size: 34px;
     }
 }
@@ -60,6 +60,15 @@
     -webkit-text-fill-color: $fill; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $border;
+    @include for-tablet-only {
+        font-size: 134px;
+    }
+    @media (max-width: 900px) {
+        font-size: 84px;
+    }
+    @include for-phone-only {
+        font-size: 84px;
+    }
 }
 
 @mixin large-hero-desktop {
@@ -71,10 +80,10 @@
     line-height: 24px;
     letter-spacing: normal;
     color: $new-dark-grey;
-    @include for-small-desktop{
+    @include for-small-desktop {
         font-size: 20px;
     }
-    @include for-tablet-only{
+    @include for-tablet-only {
         font-size: 16px;
     }
 }
@@ -88,6 +97,9 @@
     line-height: 1.09;
     letter-spacing: normal;
     color: $new-dark-grey;
+    @include for-small-desktop {
+        font-size: 54px;
+    }
 }
 
 @mixin main-text-desktop {
@@ -96,9 +108,15 @@
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.09;
+    line-height: 1.79;
     letter-spacing: normal;
     color: $new-dark-grey;
+    @include for-small-desktop {
+        font-size: 16px;
+    }
+    @include for-tablet-only {
+        font-size: 16px;
+    }
 }
 
 @mixin main-bolder-text-desktop {
@@ -112,7 +130,6 @@
     color: $new-dark-grey;
 }
 
-
 @mixin middle-title-desktop {
     font-family: 'Biryani';
     font-size: 34px;
@@ -122,6 +139,9 @@
     line-height: 24px;
     letter-spacing: normal;
     color: $new-dark-grey;
+    @include for-tablet-only {
+        font-size: 24px;
+    }
 }
 
 @mixin small-header-desktop {
@@ -134,7 +154,6 @@
     letter-spacing: normal;
     color: $new-dark-grey;
 }
-
 
 @mixin tiny-header-desktop {
     font-family: 'Biryani';

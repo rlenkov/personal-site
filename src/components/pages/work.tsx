@@ -86,7 +86,9 @@ const Work = () => {
                     <h1>we could</h1>
                     <h1>create..!?</h1>
                     <div className={workStyles.description}>
-                        <p>Get a developer who can do it all.</p>
+                        <p>How many developers does it take to change a light bulb?</p>
+                        <strong>front-end + back-end + dev-ops = 3?</strong>
+                        <p>Think again.</p>
                     </div>
                 </div>
             </div>

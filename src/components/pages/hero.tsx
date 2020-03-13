@@ -34,7 +34,7 @@ const Hero = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            contentfulAsset(
+            profile: contentfulAsset(
                 id: { eq: "a14cac87-c59e-56fb-9e76-4babb241f423" }
             ) {
                 title
@@ -45,8 +45,17 @@ const Hero = () => {
                     srcSet
                 }
             }
+            background: contentfulAsset(
+                id: { eq: "1a97992c-e33b-5c36-aff9-6fb72d9947e1" }
+            ) {
+                title
+                fluid {
+                    src
+                }
+            }
         }
     `)
+
     const animatedElements = {
         runOpeningAnimation: {
             id: '',
@@ -73,8 +82,13 @@ const Hero = () => {
         )
     }
 
+    const backgroundStyle = {
+        backgroundImage: `url('${data.background.fluid.src}')`,
+        backgroundSize: '100%',
+    }
+
     return (
-        <section id="hero" className={heroStyles.heroContainer}>
+        <section id="hero" className={heroStyles.heroContainer} style={backgroundStyle}>
             <Welcome runOpen={animationStates.runOpeningAnimation} />
             <div className={heroStyles.heroContentBox}>
                 <div className={heroStyles.heroTextBox}>
@@ -97,7 +111,7 @@ const Hero = () => {
                 <div className={heroStyles.heroImageBox}>
                     <Img
                         className={heroStyles.profileImage}
-                        fixed={data.contentfulAsset.fixed}
+                        fixed={data.profile.fixed}
                     />
                 </div>
             </div>

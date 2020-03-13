@@ -37,6 +37,14 @@
     p {
         @include main-text-desktop;
         color: $new-white;
+        margin-bottom: 5px;
+    }
+    strong {
+        display: inline-block;
+        @include main-text-desktop;
+        color: $new-white;
+        font-weight: 600;
+        margin-bottom: 30px;
     }
 }
 

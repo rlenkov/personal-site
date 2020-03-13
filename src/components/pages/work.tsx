@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Carousel from '../addons/carousel'
+import ScrollContext from '../../context/scrollContext'
 import useWindowSize from '../../custom-hooks/useWindowSize'
 import useMouseOver from '../../custom-hooks/useMouseOver'
 import workStyles from './work.module.scss'
 
-const Work = () => {
+const Work = props => {
     const size = useWindowSize()
     const isMouseOver = useMouseOver('work-carousel-box')
+    const scrollY = useContext(ScrollContext)
     const vwTOpx = value => {
         const result = (size.width * value) / 100
         return result
@@ -62,9 +64,33 @@ const Work = () => {
                 )
             })
     }
+
+    const boxScrollTransformA = {
+        transform: `translateY(-${scrollY / 10}px)`,
+        transition: 'transform 0.5s ease',
+    }
+
+    const boxScrollTransformB = {
+        transform: `translateY(-${scrollY / 12}px)`,
+        transition: 'transform 0.5s ease',
+    }
+
+    const boxScrollTransformC = {
+        transform: `translateY(-${scrollY / 5}px)`,
+        transition: 'transform 0.5s ease',
+    }
+
     return (
         <section id="work" className={workStyles.workContainer}>
             <div className={workStyles.workContentBox}>
+                <div
+                    className={workStyles.decorationBoxMedium}
+                    style={boxScrollTransformA}
+                />
+                <div
+                    className={workStyles.decorationBoxLittle}
+                    style={boxScrollTransformC}
+                />
                 <div
                     className={workStyles.carouselBlock}
                     id="work-carousel-box"
@@ -83,8 +109,22 @@ const Work = () => {
                     </Carousel>
                 </div>
                 <div className={workStyles.textBlock}>
-                    <div className={workStyles.decorationBoxLarge} />
-                    <div className={workStyles.decorationBoxSmall} />
+                    <div
+                        className={workStyles.decorationBoxLarge}
+                        style={boxScrollTransformA}
+                    />
+                    <div
+                        className={workStyles.decorationBoxSmall}
+                        style={boxScrollTransformB}
+                    />
+                    <div
+                        className={workStyles.decorationBoxTiny}
+                        style={boxScrollTransformC}
+                    />
+                    <div
+                        className={workStyles.decorationBoxMiny}
+                        style={boxScrollTransformC}
+                    />
                     <h1>The things</h1>
                     <h1>we could</h1>
                     <h1>create..!?</h1>

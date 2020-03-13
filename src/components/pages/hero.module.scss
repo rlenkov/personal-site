@@ -8,6 +8,7 @@
 
 .hero-container::after {
     content: "";
+    height: 900px;
     background: $new-space;
     opacity: 0.9;
     top: 0;

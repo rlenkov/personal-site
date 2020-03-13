@@ -9,6 +9,12 @@
     line-height: 1.09;
     letter-spacing: normal;
     color: $new-dark-grey;
+    @include for-small-desktop{
+        font-size: 104px;
+    }
+    @include for-tablet-only{
+        font-size: 64px;
+    }
 }
 
 @mixin large-welcome-desktop {
@@ -20,6 +26,15 @@
     line-height: 1.09;
     letter-spacing: normal;
     color: $new-dark-grey;
+    @include for-small-desktop{
+        font-size: 104px;
+    }
+    @include for-tablet-only{
+        font-size: 64px;
+    }
+    @include for-phone-only{
+        font-size: 34px;
+    }
 }
 
 @mixin large-thin-desktop {
@@ -56,6 +71,12 @@
     line-height: 24px;
     letter-spacing: normal;
     color: $new-dark-grey;
+    @include for-small-desktop{
+        font-size: 20px;
+    }
+    @include for-tablet-only{
+        font-size: 16px;
+    }
 }
 
 @mixin large-topic-desktop {

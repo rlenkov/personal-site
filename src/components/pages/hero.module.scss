@@ -7,7 +7,7 @@
 }
 
 .hero-container::after {
-    content: "";
+    content: '';
     height: 900px;
     background: $new-space;
     opacity: 0.9;
@@ -17,7 +17,7 @@
     right: 0;
     position: absolute;
     z-index: 0;
-  }
+}
 
 .hero-content-box {
     padding: 100px 200px 100px 300px;
@@ -31,7 +31,6 @@
 }
 
 .hero-text-box {
-    padding-right: 50px;
     height: 500px;
     flex-grow: 1;
     display: flex;
@@ -43,6 +42,7 @@
     h1 {
         @include large-header-desktop;
         color: $new-white;
+        white-space: nowrap;
     }
     h2 {
         @include large-hero-desktop;
@@ -56,7 +56,7 @@
     vertical-align: bottom;
     background-color: black;
     color: white;
-    max-width: 400px;
+    max-width: 20vw;
     padding: 7px 0 1px 0;
     text-align: center;
     overflow-wrap: normal;
@@ -76,7 +76,7 @@
     display: inline-block;
     vertical-align: bottom;
     text-decoration: underline;
-    width: 400px;
+    width: 20vw;
 }
 
 .hero-image-box {
@@ -102,5 +102,65 @@
             transform-origin: bottom center;
             animation-timing-function: cubic-bezier(1, 1, 1, 1);
         }
+    }
+}
+
+@include for-small-desktop {
+    .hero-container {
+        height: 800px;
+    }
+
+    .hero-text-box {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero-container {
+        background: $new-space;
+        height: 700px;
+    }
+
+    .hero-text-box {
+        height: 400px;
+        h2 {
+            font-size: 18px;
+            color: $new-white;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@include for-tablet-only {
+    .hero-content-box {
+        padding: 100px 50px 100px 200px;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+    }
+    .changeling-text-box {
+        display: inline-block;
+        max-width: 300px;
+    }
+
+    .changeling-text {
+        width: 300px;
+    }
+}
+
+@include for-phone-only {
+    .hero-content-box {
+        padding: 100px 50px 100px 50px;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+    }
+    .changeling-text-box {
+        display: inline-block;
+        max-width: 300px;
+    }
+
+    .changeling-text {
+        width: 300px;
     }
 }

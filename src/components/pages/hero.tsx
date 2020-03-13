@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import heroStyles from './hero.module.scss'
 import { useStaticQuery, graphql } from 'gatsby'
 import Welcome from './welcome'
+import useWindowSize from '../../custom-hooks/useWindowSize'
 import ScrollContext from '../../context/scrollContext'
 import {
     effects,
@@ -12,6 +13,7 @@ import {
 const Hero = () => {
     const scrollY = useContext(ScrollContext)
     const [titleIndex, setTitleIndex] = useState(0)
+    const size = useWindowSize()
     const [titles, setTitles] = useState([
         'software developer',
         'devOps engineer',
@@ -56,6 +58,18 @@ const Hero = () => {
         }
     `)
 
+    const isMobile = () => {
+        if (size) {
+            return size.width <= 500
+        }
+    }
+
+    const isTablet = () => {
+        if (size) {
+            return size.width <= 1100
+        }
+    }
+
     const animatedElements = {
         runOpeningAnimation: {
             id: '',
@@ -66,9 +80,13 @@ const Hero = () => {
     const animationStates = useAnimationManager(animatedElements, scrollY)
 
     const getSlidingTitles = () => {
-        const slide = {
-            transform: `translateX(calc(-${titleIndex} * 400px))`,
-        }
+        const slide = isTablet()
+            ? {
+                  transform: `translateX(calc(-${titleIndex} * 300px))`,
+              }
+            : {
+                  transform: `translateX(calc(-${titleIndex} * 20vw))`,
+              }
         return (
             <div style={slide} className={heroStyles.slidingTitles}>
                 {titles.map(text => {
@@ -88,7 +106,11 @@ const Hero = () => {
     }
 
     return (
-        <section id="hero" className={heroStyles.heroContainer} style={backgroundStyle}>
+        <section
+            id="hero"
+            className={heroStyles.heroContainer}
+            style={backgroundStyle}
+        >
             <Welcome runOpen={animationStates.runOpeningAnimation} />
             <div className={heroStyles.heroContentBox}>
                 <div className={heroStyles.heroTextBox}>
@@ -108,12 +130,12 @@ const Hero = () => {
                         <h2>ready to get work done for you!</h2>
                     </div>
                 </div>
-                <div className={heroStyles.heroImageBox}>
+                {/* <div className={heroStyles.heroImageBox}>
                     <Img
                         className={heroStyles.profileImage}
                         fixed={data.profile.fixed}
                     />
-                </div>
+                </div> */}
             </div>
         </section>
     )

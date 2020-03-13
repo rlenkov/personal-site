@@ -17,7 +17,6 @@ const SimpleMap = props => {
             style={{
                 height: '100%',
                 width: '100%',
-                border: '2px solid #262626',
             }}
         >
             <GoogleMapReact

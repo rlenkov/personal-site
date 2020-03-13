@@ -1,14 +1,42 @@
-import React, { useState, useEffect } from 'react'
-import { navigate } from 'gatsby'
-
+import React, { useState, useEffect, useContext } from 'react'
+import smoothScroll from 'smoothscroll-polyfill'
+import ScrollContext from '../../context/scrollContext'
 import styles from './verticalMenu.module.scss'
 
 const VerticalMenu = props => {
+    smoothScroll.polyfill()
+    const scrollY = useContext(ScrollContext)
+
     const getStyleFor = page => {
         if (page === props.page) {
             return styles.clickStickActive
         }
         return styles.clickStick
+    }
+
+    const getElementPixelLocation = elementId => {
+        const isClient =
+            typeof window === 'object' && typeof document === 'object'
+        if (isClient) {
+            const element = document.getElementById(elementId)
+            if (element) {
+                return element.getBoundingClientRect().top + scrollY
+            }
+        }
+        return null
+    }
+
+    const navigateToPage = pageId => {
+        const location = getElementPixelLocation(pageId)
+        const isClient =
+            typeof window === 'object' && typeof document === 'object'
+        if (isClient && location !== null) {
+            window.scroll({
+                top: location,
+                left: 0,
+                behavior: 'smooth',
+            })
+        }
     }
 
     return (
@@ -17,8 +45,7 @@ const VerticalMenu = props => {
                 <div
                     className={getStyleFor('hero')}
                     onClick={() => {
-                        props.setPage('hero')
-                        navigate('/#hero')
+                        navigateToPage('hero')
                     }}
                 >
                     <span>hero</span>
@@ -27,8 +54,7 @@ const VerticalMenu = props => {
                     className={getStyleFor('work')}
                     style={{ top: '40px' }}
                     onClick={() => {
-                        props.setPage('work')
-                        navigate('/#work')
+                        navigateToPage('work')
                     }}
                 >
                     <span>work</span>
@@ -37,8 +63,7 @@ const VerticalMenu = props => {
                     className={getStyleFor('about')}
                     style={{ top: '80px' }}
                     onClick={() => {
-                        props.setPage('about')
-                        navigate('/#about')
+                        navigateToPage('about')
                     }}
                 >
                     <span>about</span>
@@ -47,8 +72,7 @@ const VerticalMenu = props => {
                     className={getStyleFor('contact')}
                     style={{ top: '120px' }}
                     onClick={() => {
-                        props.setPage('contact')
-                        navigate('/#contact')
+                        navigateToPage('contact')
                     }}
                 >
                     <span>contact</span>

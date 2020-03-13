@@ -3,7 +3,7 @@
 .contact-container {
     position: relative;
     background-color: $new-white;
-    height: 900px;
+    height: 800px;
 }
 
 .contact-headline {
@@ -24,9 +24,26 @@
 }
 
 .contact-content-box {
-    padding: 100px 200px 100px 300px;
-    display: flex;
-    flex-direction: row;
+    padding: 50px 0px 0px 300px;
+    z-index: $over-base-z;
+    p {
+        @include large-hero-desktop;
+        display: block;
+    }
+    p:nth-child(1) {
+        margin-left: 50px;
+    }
+    p:nth-child(2) {
+        margin-left: 100px;
+    }
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: $new-dark-aquamarine;
+    }
+    a:active {
+        color: $new-dark-aquamarine;
+    }
 }
 
 

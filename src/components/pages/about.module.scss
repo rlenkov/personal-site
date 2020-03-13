@@ -87,13 +87,14 @@
     visibility: hidden;
     z-index: $over-base-z;
     position: absolute;
-    top: -150px;
+    top: -220px;
     left: 50px;
     width: 300px;
-    height: 150px;
+    height: 180px;
     background-color: $new-white;
     border-radius: 5px;
     padding: 20px;
+    border: 2px solid $new-coral;
     p {
         @include main-bolder-text-desktop;
     }
@@ -108,25 +109,27 @@
         visibility: visible;
         z-index: $over-base-z;
         position: absolute;
-        top: -180px;
+        top: -220px;
         left: 50px;
         width: 300px;
-        height: 150px;
+        height: 180px;
         background-color: $new-space;
         border-radius: 5px;
         padding: 20px;
+        border: 2px solid $new-coral;
         p {
             @include main-bolder-text-desktop;
             color: $new-white;
+            z-index: $header-z;
+            text-align: center;
         }
-        -webkit-transition: all 0.5s ease-in-out; /* Safari prior 6.1 */
-        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease; /* Safari prior 6.1 */
+        transition: all 0.5s ease;
         transform: rotateX(0deg);
         -webkit-transform: rotateX(0deg);
         -ms-transform: rotateX(0deg);
     }
 }
-
 
 .skill {
     cursor: pointer;
@@ -147,5 +150,9 @@
 }
 
 .about-image-box {
-    // pass
+    margin-left: auto;
+}
+
+.profile-image {
+    position: relative;
 }

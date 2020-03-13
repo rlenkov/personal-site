@@ -11,8 +11,9 @@ export default () => {
                         description {
                             json
                         }
+                        order
                         image {
-                            fixed(width: 300) {
+                            fixed(width: 100, height: 100) {
                                 width
                                 height
                                 src

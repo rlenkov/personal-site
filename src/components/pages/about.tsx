@@ -25,37 +25,11 @@ const About = () => {
 
     const payload = useSkillsData()
 
-    // const getSkillBox = skill => {
-    //     if (skill) {
-    //         return (
-    //             <div className={aboutStyles.skillDescribeBox}>
-    //                 <p>Skills Here for: {skill}</p>
-    //             </div>
-    //         )
-    //     }
-    //     return (
-    //         <Img
-    //             className={aboutStyles.profileImage}
-    //             fixed={data.contentfulAsset.fixed}
-    //         />
-    //     )
-    // }
-
     const getSkillsBox = () => {
-        const skills = [
-            'JAVASCRIPT',
-            'HTML',
-            'CSS',
-            'SASS',
-            'REACT',
-            'AWS',
-            'JAVA',
-            'GROOVY',
-            'PYTHON',
-            'PERL',
-        ]
-        const skillSpans = payload.allContentfulSkillDescriptions.edges.map(
-            skill => {
+
+        const skillSpans = payload.allContentfulSkillDescriptions.edges
+            .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
+            .map(skill => {
                 return (
                     <div
                         className={aboutStyles.inlineBox}
@@ -63,17 +37,15 @@ const About = () => {
                     >
                         <div
                             className={aboutStyles.explainerPopup}
-                            // style={{
-                            //     backgroundImage: `url("${skill.node.image.fixed.src}")`,
-                            // }}
+                            style={{
+                                backgroundImage: `url("${skill.node.image.fixed.src}")`,
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                            }}
                         >
                             {documentToReactComponents(
                                 skill.node.description.json
                             )}
-                            {/* <Img
-                                className={aboutStyles.skillImage}
-                                fixed={skills.node.image.fixed.src}
-                            /> */}
                         </div>
                         <span
                             className={
@@ -94,8 +66,7 @@ const About = () => {
                         <span className={aboutStyles.separator}>|</span>
                     </div>
                 )
-            }
-        )
+            })
         return <h3>{skillSpans}</h3>
     }
     return (
@@ -109,7 +80,6 @@ const About = () => {
                     {getSkillsBox()}
                 </div>
                 <div className={aboutStyles.aboutImageBox}>
-                    {/* {getSkillBox(skillBox)} */}
                     <Img
                         className={aboutStyles.profileImage}
                         fixed={data.contentfulAsset.fixed}

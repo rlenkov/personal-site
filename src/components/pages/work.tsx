@@ -17,13 +17,14 @@ const Work = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            allContentfulWorkCarouselItem {
+            allContentfulWorkAspects {
                 edges {
                     node {
                         title
                         description {
                             json
                         }
+                        order
                         image {
                             fixed(width: 300) {
                                 width
@@ -39,25 +40,27 @@ const Work = () => {
     `)
 
     const getScrollBoxes = () => {
-        return data.allContentfulWorkCarouselItem.edges.map(element => {
-            return (
-                <div className={workStyles.stepBox} draggable={false}>
-                    <h3>{element.node.title}</h3>
-                    <div className={workStyles.carouselMedia}>
-                        <Img
-                            className={workStyles.carouselImage}
-                            fixed={element.node.image.fixed}
-                            draggable={false}
-                        />
-                        <div className={workStyles.carouselText}>
-                            {documentToReactComponents(
-                                element.node.description.json
-                            )}
+        return data.allContentfulWorkAspects.edges
+            .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
+            .map(element => {
+                return (
+                    <div className={workStyles.stepBox} draggable={false}>
+                        <h3>{element.node.title}</h3>
+                        <div className={workStyles.carouselMedia}>
+                            <Img
+                                className={workStyles.carouselImage}
+                                fixed={element.node.image.fixed}
+                                draggable={false}
+                            />
+                            <div className={workStyles.carouselText}>
+                                {documentToReactComponents(
+                                    element.node.description.json
+                                )}
+                            </div>
                         </div>
                     </div>
-                </div>
-            )
-        })
+                )
+            })
     }
     return (
         <section id="work" className={workStyles.workContainer}>
@@ -86,7 +89,10 @@ const Work = () => {
                     <h1>we could</h1>
                     <h1>create..!?</h1>
                     <div className={workStyles.description}>
-                        <p>How many developers does it take to change a light bulb?</p>
+                        <p>
+                            How many developers does it take to change a light
+                            bulb?
+                        </p>
                         <strong>front-end + back-end + dev-ops = 3?</strong>
                         <p>Think again.</p>
                     </div>

@@ -6,7 +6,7 @@ const Contact = () => {
     const scrollY = useContext(ScrollContext)
 
     const boxScrollTransformA = {
-        transform: `translateY(${150 - scrollY / 20}px)`,
+        transform: `translateY(${130 - scrollY / 20}px)`,
         transition: 'transform 0.5s ease',
     }
 

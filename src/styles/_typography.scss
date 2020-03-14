@@ -112,6 +112,9 @@
     @include for-small-desktop {
         font-size: 54px;
     }
+    @include for-tablet-only {
+        font-size: 36px;
+    }
 }
 
 @mixin main-text-desktop {

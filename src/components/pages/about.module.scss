@@ -6,29 +6,6 @@
     height: 800px;
 }
 
-// .skill-modal-container {
-//     z-index: $over-header-z;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     background-color: rgba(17, 17, 17, 0.5);
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .skill-modal {
-//     flex-grow: 0;
-//     flex-shrink: 0;
-//     width: 50%;
-//     // height:
-//     background-color: black;
-//     color: white;
-// }
-
 .skill-describe-box {
     padding: 30px;
     p {
@@ -45,15 +22,19 @@
 }
 
 .about-content-box {
+    position: relative;
+    z-index: 0;
     padding: 100px 200px 100px 300px;
     display: flex;
     flex-direction: row;
 }
 
 .skill-collections {
+    position: relative;
+    z-index: $over-base-z;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 50%;
+    width: 60%;
     h4 {
         @include small-header-desktop;
     }
@@ -65,22 +46,9 @@
 .inline-box {
     display: inline-block;
     position: relative;
+    z-index: $over-base-z;
     perspective: 1000px;
 }
-
-// .explainer-popup-shown {
-//     z-index: $over-base-z;
-//     position: absolute;
-//     top: -150px;
-//     left: 50px;
-//     width: 300px;
-//     height: 150px;
-//     background-color: $new-white;
-//     color: $new-space;
-//     p {
-//         @include main-text-desktop;
-//     }
-// }
 
 .explainer-popup {
     display: block;
@@ -90,7 +58,7 @@
     top: -220px;
     left: 50px;
     width: 300px;
-    height: 180px;
+    min-height: 180px;
     background-color: $new-white;
     border-radius: 5px;
     padding: 20px;
@@ -112,7 +80,7 @@
         top: -220px;
         left: 50px;
         width: 300px;
-        height: 180px;
+        min-height: 180px;
         background-color: $new-space;
         border-radius: 5px;
         padding: 20px;
@@ -132,13 +100,7 @@
 }
 
 .skill {
-    cursor: pointer;
-}
-
-.skill-active {
-    color: $new-coral;
-    text-decoration: underline;
-    cursor: pointer;
+    cursor: default;
 }
 
 .skill:hover {
@@ -151,8 +113,92 @@
 
 .about-image-box {
     margin-left: auto;
+    position: relative;
+    z-index: 0;
 }
 
 .profile-image {
     position: relative;
+    z-index: 0;
+}
+
+@include for-small-desktop {
+    .about-container {
+        position: relative;
+        background-color: $new-white;
+        height: 600px;
+    }
+
+    .skill-collections {
+        h4 {
+            @include small-header-desktop;
+        }
+        h3 {
+            @include large-thin-desktop;
+        }
+    }
+    .explainer-popup {
+        top: -230px;
+    }
+
+    .inline-box:hover {
+        .explainer-popup {
+            top: -230px;
+        }
+    }
+}
+
+@include for-tablet-only {
+    .about-headline {
+        margin-left: 200px;
+        padding-top: 100px;
+        h1 {
+            @include large-topic-desktop;
+        }
+    }
+
+    .about-content-box {
+        position: relative;
+        z-index: 0;
+        padding: 50px 100px 100px 200px;
+        display: flex;
+        flex-direction: row;
+    }
+    .skill {
+        cursor: pointer;
+    }
+
+    .skill-active {
+        color: $new-coral;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@include for-phone-only {
+    .about-container {
+        position: relative;
+        background-color: $new-white;
+        height: 900px;
+    }
+
+    .about-headline {
+        margin-left: 30px;
+        padding-top: 100px;
+    }
+
+    .about-content-box {
+        position: relative;
+        z-index: 0;
+        padding: 30px 10px 100px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-collections {
+        width: 90%;
+    }
+
+    .about-image-box {
+        margin: 0, auto;
+    }
 }

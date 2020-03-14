@@ -26,7 +26,6 @@ const About = () => {
     const payload = useSkillsData()
 
     const getSkillsBox = () => {
-
         const skillSpans = payload.allContentfulSkillDescriptions.edges
             .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
             .map(skill => {
@@ -83,6 +82,7 @@ const About = () => {
                     <Img
                         className={aboutStyles.profileImage}
                         fixed={data.contentfulAsset.fixed}
+                        imgStyle={{ zIndex: 0 }}
                     />
                 </div>
             </div>

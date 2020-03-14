@@ -4,8 +4,10 @@ import ScrollContext from '../../context/scrollContext'
 import styles from './verticalMenu.module.scss'
 
 const VerticalMenu = props => {
-    smoothScroll.polyfill()
     const scrollY = useContext(ScrollContext)
+    useEffect(() => {
+        smoothScroll.polyfill()
+    }, [])
 
     const getStyleFor = page => {
         if (page === props.page) {

@@ -20,6 +20,7 @@
     width: 40px;
     height: 2px;
     border: 2px solid $new-aquamarine;
+    background-color: $new-aquamarine;
     cursor: pointer;
     span {
         display: inline-block;
@@ -36,10 +37,17 @@
             color: $new-white;
         }
     }
+    &:active {
+        border-color: $new-aquamarine;
+        span {
+            color: $new-aquamarine;
+        }
+    }
 }
 
 .click-stick {
     position: absolute;
+    background-color: $new-aquamarine;
     right: 0px;
     width: 20px;
     height: 1px;
@@ -60,6 +68,12 @@
             color: $new-white;
         }
     }
+    &:active {
+        border-color: $new-aquamarine;
+        span {
+            color: $new-aquamarine;
+        }
+    }
 }
 
 .menuBoxLight {
@@ -70,6 +84,7 @@
     z-index: $header-z;
     .click-stick {
         border: 1px solid $new-dark-grey;
+        background-color: $new-dark-grey;
         span {
             color: $new-dark-grey;
         }

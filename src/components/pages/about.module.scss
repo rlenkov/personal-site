@@ -61,9 +61,9 @@
     width: 300px;
     min-height: 180px;
     background-color: $new-white;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 20px;
-    border: 2px solid $new-coral;
+    border: 2px solid $new-aquamarine;
     p {
         @include main-bolder-text-desktop;
     }
@@ -83,9 +83,9 @@
         width: 300px;
         min-height: 180px;
         background-color: $new-space;
-        border-radius: 5px;
+        border-radius: 8px;
         padding: 20px;
-        border: 2px solid $new-coral;
+        border: 2px solid $new-aquamarine;
         p {
             @include main-bolder-text-desktop;
             color: $new-white;
@@ -169,10 +169,24 @@
         cursor: pointer;
     }
 
-    .skill-active {
-        color: $new-coral;
-        text-decoration: underline;
-        cursor: pointer;
+    // .skill-active {
+    //     color: $new-coral;
+    //     // text-decoration: underline;
+    //     // cursor: pointer;
+    // }
+
+    .explainer-popup {
+        width: 250px;
+        top: -250px;
+        left: -30px;
+    }
+
+    .inline-box:hover {
+        .explainer-popup {
+            width: 250px;
+            top: -250px;
+            left: -30px;
+        }
     }
 }
 
@@ -198,8 +212,15 @@
     .skill-collections {
         width: 90%;
     }
-
     .about-image-box {
         margin: 0, auto;
+    }
+}
+
+@include for-tiny-phone-only {
+    .about-container {
+        position: relative;
+        background-color: $new-white;
+        height: 800px;
     }
 }

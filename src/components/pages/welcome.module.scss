@@ -5,11 +5,12 @@
     top: 0;
     background-color: $new-aquamarine;
     height: 100vh;
+    max-height: 100vh;
     width: 100%;
     -webkit-transform: none;
     transform: none;
     z-index: $over-header-z;
-    // @include y-slide-delayed-opacity-reset(1s);
+    overflow: hidden;
 }
 
 .welcome-container-slide {
@@ -18,12 +19,14 @@
     top: 0;
     background-color: $new-aquamarine;
     height: 100vh;
+    max-height: 100vh;
     width: 100%;
     transform: translateY(-100vh);
     -webkit-transform: translateY(-100vh);
     -ms-transform: translateY(300px);
     transition: transform 1s ease-in-out;
     transition-delay: 2s;
+    overflow: hidden;
 }
 
 .welcome-container-gone {
@@ -31,11 +34,15 @@
 }
 
 .welcome-message-box {
-    margin: 10% auto;
-    width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    width: 70%;
+    z-index: $over-all-z;
     h1 {
+        position: relative;
         display: inline-block;
         @include large-welcome-desktop;
+        z-index: $over-all-z;
     }
     h1:nth-of-type(1) {
         @include y-slide-delayed-opacity-reset($default-slide-in-time);
@@ -52,7 +59,10 @@
 }
 
 .welcome-message-box-gone {
-    margin: 10% auto;
+    margin-top: 5%;
+    margin-left: auto;
+    width: 70%;
+    z-index: $over-all-z;
     h1:nth-of-type(1) {
         @include y-slide-delayed-opacity(100%);
         transition-delay: 0;
@@ -67,19 +77,138 @@
     }
 }
 
-@include for-tablet-only{
-    .welcome-message-box {
-        margin: 20% auto;
-    }
-    .welcome-message-box-gone {
-        margin: 20% auto;
+.svg-box {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 650px;
+    height: 650px;
+    z-index: $over-header-z;
+    @include x-slide-delayed-opacity-reset($default-slide-in-time);
+}
+
+.svg-box-gone {
+    position: absolute;
+    bottom: 0;
+    @include x-slide-delayed-opacity(100%);
+    left: 50px;
+    width: 650px;
+    height: 650px;
+    z-index: $over-header-z;
+}
+.svg-component {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    z-index: $over-header-z;
+    svg {
+        z-index: $over-header-z;
     }
 }
-@include for-phone-only{
+
+@include for-small-desktop {
     .welcome-message-box {
-        margin: 30% auto;
+        margin-top: 5%;
+        margin-left: auto;
+        width: 60%;
     }
     .welcome-message-box-gone {
-        margin: 30% auto;
+        margin-top: 5%;
+        margin-left: auto;
+        width: 60%;
+    }
+    .svg-box {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 550px;
+        height: 550px;
+        z-index: $over-header-z;
+    }
+    .svg-box-gone {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 550px;
+        height: 550px;
+        z-index: $over-header-z;
+    }
+    .svg-component {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        z-index: $over-header-z;
+        svg {
+            z-index: $over-header-z;
+        }
+    }
+}
+
+@include for-tablet-only {
+    .welcome-message-box {
+        width: 60%;
+    }
+    .welcome-message-box-gone {
+        width: 60%;
+    }
+    .svg-box {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 450px;
+        height: 450px;
+        z-index: $over-header-z;
+    }
+    .svg-box-gone {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 450px;
+        height: 450px;
+        z-index: $over-header-z;
+    }
+    .svg-component {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        z-index: $over-header-z;
+        svg {
+            z-index: $over-header-z;
+        }
+    }
+}
+@include for-phone-only {
+    .welcome-message-box {
+        margin-top: 15vh;
+        width: 90%;
+    }
+    .welcome-message-box-gone {
+        margin-top: 15vh;
+        width: 90%;
+    }
+    .svg-box {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 400px;
+        height: 60vh;
+        z-index: $over-header-z;
+    }
+    .svg-box-gone {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 400px;
+        height: 60vh;
+        z-index: $over-header-z;
+    }
+    .svg-component {
+        position: relative;
+        width: 100vw;
+        height: 70vh;
+        z-index: $over-header-z;
+        svg {
+            z-index: $over-header-z;
+        }
     }
 }

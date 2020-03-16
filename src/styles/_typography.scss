@@ -27,10 +27,10 @@
     letter-spacing: normal;
     color: $new-dark-grey;
     @include for-small-desktop {
-        font-size: 84px;
+        font-size: 64px;
     }
     @include for-tablet-only {
-        font-size: 64px;
+        font-size: 44px;
     }
     @include for-phone-only {
         font-size: 34px;

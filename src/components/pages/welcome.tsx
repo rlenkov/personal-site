@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Illustration from '../../assets/undraw_investment.svg'
 import welcomeStyles from './welcome.module.scss'
 
 interface Props {
@@ -37,6 +38,9 @@ const Welcome = ({ runOpen }: Props) => {
 
     return (
         <section className={getStateOfComponent()}>
+            <div className={runOpen ? welcomeStyles.svgBox : welcomeStyles.svgBoxGone}>
+                <Illustration className={welcomeStyles.svgComponent} />
+            </div>
             <div
                 className={
                     runOpen

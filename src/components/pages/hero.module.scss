@@ -3,12 +3,14 @@
 .hero-container {
     background: $new-space;
     height: 900px;
+    max-height: 100vh;
     z-index: 0;
 }
 
 .hero-container::after {
     content: '';
     height: 900px;
+    max-height: 100vh;
     background: $new-space;
     opacity: 0.9;
     top: 0;
@@ -108,10 +110,12 @@
 @include for-small-desktop {
     .hero-container {
         height: 800px;
+        max-height: 100vh;
     }
     .hero-container::after {
         content: '';
         height: 800px;
+        max-height: 100vh;
         background: $new-space;
         opacity: 0.9;
         top: 0;

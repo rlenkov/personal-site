@@ -78,7 +78,11 @@ const Work = props => {
             .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
             .map(element => {
                 return (
-                    <div className={workStyles.stepBox} draggable={false} key={`aspect-key-${element.node.title}`}>
+                    <div
+                        className={workStyles.stepBox}
+                        draggable={false}
+                        key={`aspect-key-${element.node.title}`}
+                    >
                         <h3>{element.node.title}</h3>
                         <div className={workStyles.carouselMedia}>
                             <Img
@@ -146,12 +150,10 @@ const Work = props => {
                     </Carousel>
                 </div>
                 <div className={workStyles.textBlock}>
-                    {isTablet() ? null : (
-                        <div
-                            className={workStyles.decorationBoxLarge}
-                            style={boxScrollTransformA}
-                        />
-                    )}
+                    <div
+                        className={workStyles.decorationBoxLarge}
+                        style={boxScrollTransformA}
+                    />
                     <div
                         className={workStyles.decorationBoxSmall}
                         style={boxScrollTransformB}

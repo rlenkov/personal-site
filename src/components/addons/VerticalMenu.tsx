@@ -50,7 +50,7 @@ const VerticalMenu = props => {
                         navigateToPage('hero')
                     }}
                 >
-                    <span>hero</span>
+                    <span>home</span>
                 </div>
                 <div
                     className={getStyleFor('work')}

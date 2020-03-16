@@ -76,10 +76,10 @@
         font-size: 134px;
     }
     @media (max-width: 900px) {
-        font-size: 84px;
+        font-size: 134px;
     }
     @include for-phone-only {
-        font-size: 84px;
+        font-size: 94px;
     }
 }
 

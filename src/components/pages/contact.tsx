@@ -6,12 +6,17 @@ const Contact = () => {
     const scrollY = useContext(ScrollContext)
 
     const boxScrollTransformA = {
-        transform: `translateY(${130 - scrollY / 20}px)`,
+        transform: `translateY(${100 - scrollY / 20}px)`,
         transition: 'transform 0.5s ease',
     }
 
     const boxScrollTransformB = {
         transform: `translateY(${100 - scrollY / 10}px)`,
+        transition: 'transform 0.5s ease',
+    }
+
+    const boxScrollTransformC = {
+        transform: `translateY(${100 - scrollY / 5}px)`,
         transition: 'transform 0.5s ease',
     }
 
@@ -31,6 +36,10 @@ const Contact = () => {
                 <div
                     className={contactStyles.decorationBoxSmall}
                     style={boxScrollTransformB}
+                />
+                                <div
+                    className={contactStyles.decorationBoxTiny}
+                    style={boxScrollTransformC}
                 />
             </div>
             <div className={contactStyles.contactContentBox}>

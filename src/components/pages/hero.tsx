@@ -91,7 +91,7 @@ const Hero = () => {
             <div style={slide} className={heroStyles.slidingTitles}>
                 {titles.map(text => {
                     return (
-                        <span className={heroStyles.changelingText}>
+                        <span className={heroStyles.changelingText} key={`sliding-titles-key-${text}`}>
                             {text}
                         </span>
                     )

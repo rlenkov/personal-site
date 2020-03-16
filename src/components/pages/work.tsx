@@ -78,7 +78,7 @@ const Work = props => {
             .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
             .map(element => {
                 return (
-                    <div className={workStyles.stepBox} draggable={false}>
+                    <div className={workStyles.stepBox} draggable={false} key={`aspect-key-${element.node.title}`}>
                         <h3>{element.node.title}</h3>
                         <div className={workStyles.carouselMedia}>
                             <Img

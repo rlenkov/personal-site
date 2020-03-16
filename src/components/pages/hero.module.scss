@@ -109,6 +109,18 @@
     .hero-container {
         height: 800px;
     }
+    .hero-container::after {
+        content: '';
+        height: 800px;
+        background: $new-space;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+    }
 
     .hero-text-box {
         height: 500px;
@@ -119,6 +131,18 @@
     .hero-container {
         background: $new-space;
         height: 700px;
+    }
+    .hero-container::after {
+        content: '';
+        height: 700px;
+        background: $new-space;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;
     }
 
     .hero-text-box {

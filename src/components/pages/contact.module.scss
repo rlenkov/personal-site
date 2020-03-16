@@ -113,6 +113,11 @@
             margin-left: 60px;
         }
     }
+    .decoration-box-large {
+        right: 59px;
+        width: 140px;
+        height: 140px;
+    }
 }
 
 @include for-phone-only {

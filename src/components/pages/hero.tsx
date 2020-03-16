@@ -121,7 +121,7 @@ const Hero = () => {
                     </div>
                     <div>
                         <h2>
-                            I'm Richard Lenkovits, a{' '}
+                            I'm Richard Lenkovits, a...{' '}
                             <div className={heroStyles.changelingTextBox}>
                                 {getSlidingTitles()}
                             </div>

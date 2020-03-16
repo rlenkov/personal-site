@@ -19,6 +19,16 @@
     padding-top: 100px;
     h1 {
         @include large-topic-desktop;
+        @include x-slide-delayed-opacity(-500px);
+    }
+}
+
+.about-headline-closed {
+    margin-left: 300px;
+    padding-top: 100px;
+    h1 {
+        @include large-topic-desktop;
+        @include x-slide-delayed-opacity-reset(0.6s);
     }
 }
 
@@ -44,6 +54,48 @@
     }
     a {
         @include small-header-desktop;
+    }
+}
+
+.hidden-skills {
+    &> div {
+        @include x-slide-delayed-opacity-reset(0.5s);
+    }
+    &> div:nth-of-type(2) {
+        transition-delay: 0.2s;
+    }
+    &> div:nth-of-type(3) {
+        transition-delay: 0.4s;
+    }
+    &> div:nth-of-type(4) {
+        transition-delay: 0.6s;
+    }
+    &> div:nth-of-type(5) {
+        transition-delay: 0.8s;
+    }
+    &> div:nth-of-type(6) {
+        transition-delay: 1.0s;
+    }
+    &> div:nth-of-type(7) {
+        transition-delay: 1.2s;
+    }
+    &> div:nth-of-type(8) {
+        transition-delay: 1.4s;
+    }
+    &> div:nth-of-type(9) {
+        transition-delay: 1.6s;
+    }
+    &> div:nth-of-type(10) {
+        transition-delay: 1.8s;
+    }
+    &> div:nth-of-type(11) {
+        transition-delay: 2.0s;
+    }
+}
+
+.show-skills {
+    &> div {
+        @include x-slide-delayed-opacity(-500px);
     }
 }
 
@@ -167,6 +219,13 @@
             @include large-topic-desktop;
         }
     }
+    .about-headline-closed {
+        margin-left: 200px;
+        padding-top: 100px;
+        h1 {
+            @include large-topic-desktop;
+        }
+    }
 
     .about-content-box {
         position: relative;
@@ -208,6 +267,11 @@
     }
 
     .about-headline {
+        margin-left: 30px;
+        padding-top: 100px;
+    }
+
+    .about-headline-closed {
         margin-left: 30px;
         padding-top: 100px;
     }

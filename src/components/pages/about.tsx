@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import ScrollContext from '../../context/scrollContext'
+import {
+    effects,
+    useAnimationManager,
+} from '../../custom-hooks/useAnimationManager'
 import useSkillsData from '../../custom-hooks/useSkillsData'
 import aboutStyles from './about.module.scss'
 
 const About = () => {
     const [skillBox, setSkillBox] = useState(null)
+    const scrollY = useContext(ScrollContext)
     const data = useStaticQuery(graphql`
         query {
             contentfulAsset(
@@ -22,6 +28,18 @@ const About = () => {
             }
         }
     `)
+    const animatedElements = {
+        runHeaderAnimation: {
+            id: 'about',
+            effect: effects.ON_LOW_REACHED,
+        },
+        runSkillsAnimation: {
+            id: 'about-section-animated-skills',
+            effect: effects.ON_LOW_REACHED,
+        },
+    }
+
+    const animationStates = useAnimationManager(animatedElements, scrollY)
 
     const payload = useSkillsData()
 
@@ -62,11 +80,29 @@ const About = () => {
                     </div>
                 )
             })
-        return <h3>{skillSpans}</h3>
+        return (
+            <h3
+                id="about-section-animated-skills"
+                className={
+                    animationStates.runSkillsAnimation
+                        ? aboutStyles.hiddenSkills
+                        : aboutStyles.showSkills
+                }
+            >
+                {skillSpans}
+            </h3>
+        )
     }
+
     return (
         <section id="about" className={aboutStyles.aboutContainer}>
-            <div className={aboutStyles.aboutHeadline}>
+            <div
+                className={
+                    animationStates.runHeaderAnimation
+                        ? aboutStyles.aboutHeadlineClosed
+                        : aboutStyles.aboutHeadline
+                }
+            >
                 <h1>Meet The Fixer...</h1>
             </div>
             <div className={aboutStyles.aboutContentBox}>

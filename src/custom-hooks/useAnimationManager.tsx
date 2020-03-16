@@ -52,7 +52,7 @@ export function useAnimationManager(animatedElements: object, yPosition = 0) {
                 adjustment = window.innerHeight * 1.5
             }
             if (animatedElements[key].effect === effects.ON_LOW_REACHED) {
-                adjustment = window.innerHeight * 1.1
+                adjustment = window.innerHeight * 0.9
             }
             const y = animatedElementRefs[key]
             // console.log(animatedElements[key])

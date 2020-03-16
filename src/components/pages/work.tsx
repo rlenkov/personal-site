@@ -4,6 +4,10 @@ import Img from 'gatsby-image'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Carousel from '../addons/carousel'
 import ScrollContext from '../../context/scrollContext'
+import {
+    effects,
+    useAnimationManager,
+} from '../../custom-hooks/useAnimationManager'
 import useWindowSize from '../../custom-hooks/useWindowSize'
 import useMouseOver from '../../custom-hooks/useMouseOver'
 import workStyles from './work.module.scss'
@@ -40,6 +44,15 @@ const Work = props => {
             }
         }
     `)
+
+    const animatedElements = {
+        runHeaderAnimation: {
+            id: 'work-section-animated-text',
+            effect: effects.ON_TOP_REACHED,
+        },
+    }
+
+    const animationStates = useAnimationManager(animatedElements, scrollY)
 
     const isTablet = () => {
         if (size) {
@@ -120,6 +133,10 @@ const Work = props => {
         transform: `translateY(-${scrollY / 15}px)`,
         transition: 'transform 0.5s ease',
     }
+    const boxScrollTransformE = {
+        transform: `translateY(-${100 - (scrollY / 15)}px)`,
+        transition: 'transform 0.5s ease',
+    }
 
     return (
         <section id="work" className={workStyles.workContainer}>
@@ -149,7 +166,14 @@ const Work = props => {
                         {getScrollBoxes()}
                     </Carousel>
                 </div>
-                <div className={workStyles.textBlock}>
+                <div
+                    className={
+                        animationStates.runHeaderAnimation
+                            ? workStyles.textBlockClosed
+                            : workStyles.textBlock
+                    }
+                    id="work-section-animated-text"
+                >
                     <div
                         className={workStyles.decorationBoxLarge}
                         style={boxScrollTransformA}
@@ -179,7 +203,7 @@ const Work = props => {
                     </div>
                 </div>
             </div>
-            <div className={workStyles.hiddenOutline}>
+            <div className={workStyles.hiddenOutline} style={boxScrollTransformE}>
                 <h1 unselectable="on">The things</h1>
                 <h1 unselectable="on">we could</h1>
                 <h1 unselectable="on">create..!?</h1>

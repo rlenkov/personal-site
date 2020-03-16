@@ -47,11 +47,7 @@ const About = () => {
                             )}
                         </div>
                         <span
-                            className={
-                                skill.node.title === skillBox
-                                    ? aboutStyles.skillActive
-                                    : aboutStyles.skill
-                            }
+                            className={aboutStyles.skill}
                             onClick={() => {
                                 if (skill.node.title === skillBox) {
                                     setSkillBox(null)
@@ -77,6 +73,18 @@ const About = () => {
                 <div className={aboutStyles.skillCollections}>
                     <h4>skills</h4>
                     {getSkillsBox()}
+                    <div className={aboutStyles.cvBox}>
+                        <h4>
+                            Prefer the hard facts?{' '}
+                            <a
+                                href="https://drive.google.com/file/d/1VLTfF0y5x_gcZlmuUZQmPynqMh07YUZK/view?usp=sharing"
+                                download
+                                target="_blank"
+                            >
+                                Get my CV!
+                            </a>
+                        </h4>
+                    </div>
                 </div>
                 <div className={aboutStyles.aboutImageBox}>
                     <Img

@@ -183,6 +183,7 @@
     height: 7vw;
     background-color: $new-aquamarine;
     z-index: $base-z;
+    @include custom-shadows;
 }
 
 .decoration-box-medium {
@@ -193,6 +194,7 @@
     height: 5vw;
     background-color: $new-aquamarine;
     z-index: $base-z;
+    @include custom-shadows;
 }
 
 .decoration-box-little {
@@ -203,6 +205,7 @@
     height: 4vw;
     background-color: $new-coral;
     z-index: $base-z;
+    @include custom-shadows;
 }
 
 .decoration-box-small {
@@ -213,6 +216,7 @@
     height: 2vw;
     background-color: $new-coral;
     z-index: $base-z;
+    @include custom-shadows;
 }
 
 .decoration-box-tiny {
@@ -223,6 +227,7 @@
     height: 1vw;
     background-color: $new-aquamarine;
     z-index: $base-z;
+    @include custom-shadows;
 }
 
 .decoration-box-miny {
@@ -233,6 +238,7 @@
     height: 0.5vw;
     background-color: $new-coral;
     z-index: $base-z;
+    @include custom-shadows;
 }
 
 @include for-small-desktop {

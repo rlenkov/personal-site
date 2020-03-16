@@ -3,6 +3,10 @@ import GoogleMapReact from 'google-map-react'
 
 import mapStyles from './maps.module.scss'
 
+const Marker = () => {
+    return <div className={mapStyles.marker} />
+}
+
 const SimpleMap = props => {
     const defaultProps = {
         center: {
@@ -136,8 +140,7 @@ const SimpleMap = props => {
                     ],
                 }}
             >
-                <div
-                    className={mapStyles.marker}
+                <Marker
                     lat={defaultProps.center.lat}
                     lng={defaultProps.center.lng}
                 />

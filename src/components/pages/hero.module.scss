@@ -11,7 +11,12 @@
     content: '';
     height: 900px;
     max-height: 100vh;
-    background: linear-gradient(0deg, rgba(19,19,24,1), rgba(19,19,24,0.9), rgba(19,19,24,0.6));
+    background: linear-gradient(
+        0deg,
+        rgba(19, 19, 24, 1),
+        rgba(19, 19, 24, 0.9),
+        rgba(19, 19, 24, 0.6)
+    );
     top: 0;
     left: 0;
     bottom: 0;
@@ -110,13 +115,19 @@
     .hero-container {
         height: 800px;
         max-height: 100vh;
+        min-height: 100vh;
     }
     .hero-container::after {
         content: '';
         height: 800px;
         max-height: 100vh;
-        background: $new-space;
-        opacity: 0.9;
+        min-height: 100vh;
+        background: linear-gradient(
+            0deg,
+            rgba(19, 19, 24, 1),
+            rgba(19, 19, 24, 0.9),
+            rgba(19, 19, 24, 0.6)
+        );
         top: 0;
         left: 0;
         bottom: 0;
@@ -134,12 +145,18 @@
     .hero-container {
         background: $new-space;
         height: 700px;
+        min-height: 100vh;
     }
     .hero-container::after {
         content: '';
         height: 700px;
-        background: $new-space;
-        opacity: 0.9;
+        min-height: 100vh;
+        background: linear-gradient(
+            0deg,
+            rgba(19, 19, 24, 1),
+            rgba(19, 19, 24, 0.9),
+            rgba(19, 19, 24, 0.6)
+        );
         top: 0;
         left: 0;
         bottom: 0;
@@ -176,8 +193,16 @@
 }
 
 @include for-phone-only {
+    .hero-container {
+        height: 750px;
+        min-height: 100vh;
+    }
+    .hero-container::after {
+        height: 750px;
+        min-height: 100vh;
+    }
     .hero-content-box {
-        padding: 100px 50px 100px 50px;
+        padding: 100px 20px 100px 20px;
         display: flex;
         flex-direction: row;
         z-index: 1;
@@ -189,5 +214,8 @@
 
     .changeling-text {
         width: 300px;
+    }
+    .hero-text-box {
+        text-align: center;
     }
 }

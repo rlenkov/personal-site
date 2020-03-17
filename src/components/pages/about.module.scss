@@ -58,43 +58,43 @@
 }
 
 .hidden-skills {
-    &> div {
+    & > div {
         @include x-slide-delayed-opacity-reset(0.5s);
     }
-    &> div:nth-of-type(2) {
+    & > div:nth-of-type(2) {
+        transition-delay: 0.1s;
+    }
+    & > div:nth-of-type(3) {
         transition-delay: 0.2s;
     }
-    &> div:nth-of-type(3) {
+    & > div:nth-of-type(4) {
+        transition-delay: 0.3s;
+    }
+    & > div:nth-of-type(5) {
         transition-delay: 0.4s;
     }
-    &> div:nth-of-type(4) {
+    & > div:nth-of-type(6) {
+        transition-delay: 0.5s;
+    }
+    & > div:nth-of-type(7) {
         transition-delay: 0.6s;
     }
-    &> div:nth-of-type(5) {
+    & > div:nth-of-type(8) {
+        transition-delay: 0.7s;
+    }
+    & > div:nth-of-type(9) {
         transition-delay: 0.8s;
     }
-    &> div:nth-of-type(6) {
-        transition-delay: 1.0s;
+    & > div:nth-of-type(10) {
+        transition-delay: 0.9s;
     }
-    &> div:nth-of-type(7) {
-        transition-delay: 1.2s;
-    }
-    &> div:nth-of-type(8) {
-        transition-delay: 1.4s;
-    }
-    &> div:nth-of-type(9) {
-        transition-delay: 1.6s;
-    }
-    &> div:nth-of-type(10) {
-        transition-delay: 1.8s;
-    }
-    &> div:nth-of-type(11) {
-        transition-delay: 2.0s;
+    & > div:nth-of-type(11) {
+        transition-delay: 1s;
     }
 }
 
 .show-skills {
-    &> div {
+    & > div {
         @include x-slide-delayed-opacity(-500px);
     }
 }
@@ -295,6 +295,13 @@
     .about-container {
         position: relative;
         background-color: $new-white;
-        height: 800px;
+        height: 950px;
+    }
+    .skill-collections {
+        padding-right: 30px;
+        a {
+            display: inline-block;
+            padding-top: 10px;
+        }
     }
 }

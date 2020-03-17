@@ -81,6 +81,9 @@
     @include for-phone-only {
         font-size: 94px;
     }
+    @include for-tiny-phone-only {
+        font-size: 74px;
+    }
 }
 
 @mixin large-hero-desktop {

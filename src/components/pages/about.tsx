@@ -19,7 +19,7 @@ const About = () => {
                 id: { eq: "a14cac87-c59e-56fb-9e76-4babb241f423" }
             ) {
                 title
-                fixed(width: 300) {
+                fixed(width: 400, quality: 100) {
                     width
                     height
                     src
@@ -113,7 +113,7 @@ const About = () => {
                         <h4>
                             Prefer the hard facts?{' '}
                             <a
-                                href="https://drive.google.com/file/d/1VLTfF0y5x_gcZlmuUZQmPynqMh07YUZK/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1yKaSVCXftVjEYkOog9r9CK6ym5JwCPO_/view?usp=sharing"
                                 download
                                 target="_blank"
                             >
@@ -126,7 +126,12 @@ const About = () => {
                     <Img
                         className={aboutStyles.profileImage}
                         fixed={data.contentfulAsset.fixed}
-                        imgStyle={{ zIndex: 0 }}
+                        imgStyle={{
+                            zIndex: 0,
+                            borderRadius: '10px',
+                            maxWidth: '80vw',
+                            filter: 'brightness(160%) contrast(90%) saturate(120%)',
+                        }}
                     />
                 </div>
             </div>

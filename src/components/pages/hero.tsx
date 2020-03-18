@@ -48,10 +48,10 @@ const Hero = () => {
                 }
             }
             background: contentfulAsset(
-                id: { eq: "1a97992c-e33b-5c36-aff9-6fb72d9947e1" }
+                id: { eq: "af73a0ef-464d-512f-9734-979dd6eb1883" }
             ) {
                 title
-                fluid {
+                fluid(quality: 100) {
                     src
                 }
             }
@@ -102,7 +102,9 @@ const Hero = () => {
 
     const backgroundStyle = {
         backgroundImage: `url('${data.background.fluid.src}')`,
-        backgroundSize: '100%',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'right',
     }
 
     return (

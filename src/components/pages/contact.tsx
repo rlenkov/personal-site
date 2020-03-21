@@ -47,7 +47,7 @@ const Contact = () => {
                     Let's have a chat on{' '}
                     <a
                         target="_blank"
-                        href="www.linkedin.com/in/richard-lenkovits"
+                        href="https://linkedin.com/in/richard-lenkovits"
                     >
                         LinkedIn
                     </a>

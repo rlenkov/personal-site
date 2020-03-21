@@ -203,7 +203,7 @@ const Work = props => {
                     </div>
                 </div>
             </div>
-            <div className={workStyles.hiddenOutline}>
+            <div className={workStyles.hiddenOutline} style={boxScrollTransformE}>
                 <h1 unselectable="on">The things</h1>
                 <h1 unselectable="on">we could</h1>
                 <h1 unselectable="on">create..!?</h1>

@@ -502,7 +502,7 @@
 @include for-phone-only {
     .work-container {
         background-color: $new-space;
-        height: 1150px;
+        height: 1000px;
         min-height: 100vh;
         overflow: hidden;
     }
@@ -622,7 +622,7 @@
 @include for-tiny-phone-only {
     .work-container {
         background-color: $new-space;
-        height: 1310px;
+        height: 1210px;
         min-height: 110vh;
         overflow: hidden;
     }

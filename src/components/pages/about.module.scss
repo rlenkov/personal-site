@@ -3,7 +3,7 @@
 .about-container {
     position: relative;
     background-color: $new-white;
-    height: 800px;
+    // height: 800px;
     overflow: hidden;
 }
 
@@ -55,6 +55,10 @@
     a {
         @include small-header-desktop;
     }
+    a:hover {
+        color: darken($new-coral, 30%);
+    }
+
 }
 
 .hidden-skills {
@@ -179,6 +183,12 @@
     position: relative;
     z-index: 0;
     max-width: 80vw;
+    border-radius: 10px;
+    height: 530px;
+    box-shadow: 0 1.7px 2.2px rgba(0, 0, 0, 0.02),
+        0 4.1px 5.3px rgba(0, 0, 0, 0.028), 0 7.8px 10px rgba(0, 0, 0, 0.035),
+        0 13.8px 17.9px rgba(0, 0, 0, 0.042),
+        0 25.9px 33.4px rgba(0, 0, 0, 0.05), 0 62px 80px rgba(0, 0, 0, 0.07);
 }
 
 .profile-image {
@@ -190,7 +200,7 @@
     .about-container {
         position: relative;
         background-color: $new-white;
-        height: 700px;
+        // height: 700px;
     }
 
     .skill-collections {
@@ -264,7 +274,7 @@
     .about-container {
         position: relative;
         background-color: $new-white;
-        height: 1000px;
+        // height: 1000px;
     }
 
     .about-headline {
@@ -285,7 +295,9 @@
         flex-direction: column;
     }
     .skill-collections {
-        width: 90%;
+        width: 100%;
+        margin: auto;
+        padding-left: 10px;
     }
     .about-image-box {
         margin: auto;
@@ -296,10 +308,10 @@
     .about-container {
         position: relative;
         background-color: $new-white;
-        height: 1000px;
+        // height: 1000px;
     }
     .skill-collections {
-        padding-right: 30px;
+        // padding-right: 30px;
         a {
             display: inline-block;
             padding-top: 10px;

@@ -134,7 +134,7 @@ const Work = props => {
         transition: 'transform 0.5s ease',
     }
     const boxScrollTransformE = {
-        transform: `translateY(-${100 - (scrollY / 15)}px)`,
+        transform: `translateY(-${100 - scrollY / 15}px)`,
         transition: 'transform 0.5s ease',
     }
 
@@ -154,8 +154,8 @@ const Work = props => {
                     id="work-carousel-box"
                 >
                     <Carousel
-                        // autoPlay
-                        // autoPlaySpeed={2000}
+                        autoPlay
+                        autoPlaySpeed={3000}
                         isMouseOver={isMouseOver}
                         infinite
                         carouselContainer={workStyles.carouselContainer}
@@ -203,7 +203,10 @@ const Work = props => {
                     </div>
                 </div>
             </div>
-            <div className={workStyles.hiddenOutline} style={boxScrollTransformE}>
+            <div
+                className={workStyles.hiddenOutline}
+                style={boxScrollTransformE}
+            >
                 <h1 unselectable="on">The things</h1>
                 <h1 unselectable="on">we could</h1>
                 <h1 unselectable="on">create..!?</h1>

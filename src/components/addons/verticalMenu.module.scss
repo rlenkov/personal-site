@@ -88,11 +88,23 @@
         span {
             color: $new-dark-grey;
         }
+        &:hover {
+            border-color: $new-coral;
+            span {
+                color: $new-coral;
+            }
+        }
     }
     .click-stick-active {
         border: 2px solid $new-dark-grey;
         span {
             color: $new-dark-grey;
+        }
+        &:hover {
+            border-color: $new-coral;
+            span {
+                color: $new-coral;
+            }
         }
     }
 }

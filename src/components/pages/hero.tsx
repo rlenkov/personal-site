@@ -16,19 +16,26 @@ const Hero = () => {
     const size = useWindowSize()
     const [titles, setTitles] = useState([
         'software developer',
+        'jenkins specialist',
         'devOps engineer',
         'frontend dev',
         'backend dev',
         'quasi-physicist',
         'fiction-writer',
         'frenchie dad',
+        'tech-blogger',
     ])
 
     useEffect(() => {
         const timer = setInterval(() => {
             const randomIndex = Math.floor(Math.random() * titles.length)
-            setTitleIndex(randomIndex)
-        }, 4000)
+            if (titleIndex === randomIndex) {
+                const retry = Math.floor(Math.random() * titles.length)
+                setTitleIndex(retry)
+            } else {
+                setTitleIndex(randomIndex)
+            }
+        }, 3000)
         return () => {
             clearInterval(timer)
         }
@@ -91,7 +98,10 @@ const Hero = () => {
             <div style={slide} className={heroStyles.slidingTitles}>
                 {titles.map(text => {
                     return (
-                        <span className={heroStyles.changelingText} key={`sliding-titles-key-${text}`}>
+                        <span
+                            className={heroStyles.changelingText}
+                            key={`sliding-titles-key-${text}`}
+                        >
                             {text}
                         </span>
                     )

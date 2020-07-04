@@ -130,7 +130,8 @@ const About = () => {
                             zIndex: 0,
                             borderRadius: '10px',
                             maxWidth: '80vw',
-                            filter: 'brightness(160%) contrast(90%) saturate(120%)',
+                            filter:
+                                'brightness(160%) contrast(90%) saturate(120%)',
                         }}
                     />
                 </div>

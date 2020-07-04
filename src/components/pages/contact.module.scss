@@ -3,7 +3,8 @@
 .contact-container {
     position: relative;
     background-color: $new-white;
-    height: 800px;
+    // height: 800px;
+    overflow: hidden;
 }
 
 .contact-headline {
@@ -13,6 +14,13 @@
     h1 {
         @include large-topic-desktop;
     }
+}
+
+.svg-box {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: -3vw;
 }
 
 .title {
@@ -45,6 +53,9 @@
     }
     a:active {
         color: $new-dark-aquamarine;
+    }
+    a:hover {
+        color: $new-coral;
     }
 }
 
@@ -82,6 +93,12 @@
 }
 
 @include for-small-desktop {
+    .svg-box {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        // bottom: -20px;
+    }
     .decoration-box-large {
         right: 85px;
         width: 140px;
@@ -90,10 +107,16 @@
 }
 
 @include for-tablet-only {
+    .svg-box {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        // bottom: -50px;
+    }
     .contact-container {
         position: relative;
         background-color: $new-white;
-        height: 600px;
+        // height: 600px;
     }
 
     .contact-headline {
@@ -120,10 +143,16 @@
 }
 
 @include for-phone-only {
+    .svg-box {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        // bottom: -30px;
+    }
     .contact-container {
         position: relative;
         background-color: $new-white;
-        height: 400px;
+        height: unset;
     }
     .contact-headline {
         position: relative;

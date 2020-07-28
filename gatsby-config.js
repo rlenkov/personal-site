@@ -69,10 +69,10 @@ module.exports = {
                 name: `Richard Lenkovits`,
                 short_name: `Porfolio`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
+                background_color: `#17181D`,
+                theme_color: `#17181D`,
                 display: `minimal-ui`,
-                icon: `src/images/wizard.png`, // This path is relative to the root of the site.
+                icon: `src/images/logoeri.png`, // This path is relative to the root of the site.
             },
         },
     ],

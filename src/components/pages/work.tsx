@@ -154,8 +154,6 @@ const Work = props => {
                     id="work-carousel-box"
                 >
                     <Carousel
-                        autoPlay
-                        autoPlaySpeed={3000}
                         isMouseOver={isMouseOver}
                         infinite
                         carouselContainer={workStyles.carouselContainer}

@@ -43,6 +43,34 @@ const About = () => {
 
     const payload = useSkillsData()
 
+    const getMobileSkillPopup = title => {
+        let popup = <div className={aboutStyles.mobileSkillBoxEmpty}></div>
+        if (title === null) {
+            return popup
+        }
+        payload.allContentfulSkillDescriptions.edges.forEach(skill => {
+            if (title === skill.node.title) {
+                popup = (
+                    <div
+                        className={aboutStyles.mobileSkillBox}
+                        style={{
+                            backgroundImage: `url("${skill.node.image.fixed.src}")`,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center',
+                        }}
+                        onClick={() => {
+                            setSkillBox(null)
+                        }}
+                    >
+                        {documentToReactComponents(skill.node.description.json)}
+                        <a className={aboutStyles.close} />
+                    </div>
+                )
+            }
+        })
+        return popup
+    }
+
     const getSkillsBox = () => {
         const skillSpans = payload.allContentfulSkillDescriptions.edges
             .sort((a, b) => (a.node.order >= b.node.order ? 1 : -1))
@@ -58,6 +86,9 @@ const About = () => {
                                 backgroundImage: `url("${skill.node.image.fixed.src}")`,
                                 backgroundRepeat: 'no-repeat',
                                 backgroundPosition: 'center',
+                            }}
+                            onClick={() => {
+                                setSkillBox(null)
                             }}
                         >
                             {documentToReactComponents(
@@ -108,6 +139,7 @@ const About = () => {
             <div className={aboutStyles.aboutContentBox}>
                 <div className={aboutStyles.skillCollections}>
                     <h4>skills</h4>
+                    {getMobileSkillPopup(skillBox)}
                     {getSkillsBox()}
                     <div className={aboutStyles.cvBox}>
                         <h4>

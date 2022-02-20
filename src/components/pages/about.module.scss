@@ -3,15 +3,7 @@
 .about-container {
     position: relative;
     background-color: $new-white;
-    // height: 800px;
     overflow: hidden;
-}
-
-.skill-describe-box {
-    padding: 30px;
-    p {
-        @include main-text-desktop;
-    }
 }
 
 .about-headline {
@@ -60,111 +52,6 @@
     }
 }
 
-.hidden-skills {
-    & > div {
-        @include x-slide-delayed-opacity-reset(0.5s);
-    }
-    & > div:nth-of-type(2) {
-        transition-delay: 0.1s;
-    }
-    & > div:nth-of-type(3) {
-        transition-delay: 0.2s;
-    }
-    & > div:nth-of-type(4) {
-        transition-delay: 0.3s;
-    }
-    & > div:nth-of-type(5) {
-        transition-delay: 0.4s;
-    }
-    & > div:nth-of-type(6) {
-        transition-delay: 0.5s;
-    }
-    & > div:nth-of-type(7) {
-        transition-delay: 0.6s;
-    }
-    & > div:nth-of-type(8) {
-        transition-delay: 0.7s;
-    }
-    & > div:nth-of-type(9) {
-        transition-delay: 0.8s;
-    }
-    & > div:nth-of-type(10) {
-        transition-delay: 0.9s;
-    }
-    & > div:nth-of-type(11) {
-        transition-delay: 1s;
-    }
-}
-
-.show-skills {
-    & > div {
-        @include x-slide-delayed-opacity(-500px);
-    }
-}
-
-.inline-box {
-    display: inline-block;
-    position: relative;
-    z-index: $over-base-z;
-    perspective: 1000px;
-}
-
-.explainer-popup {
-    display: block;
-    visibility: hidden;
-    z-index: $over-base-z;
-    position: absolute;
-    top: -220px;
-    left: 50px;
-    width: 300px;
-    min-height: 180px;
-    background-color: $new-white;
-    border-radius: 8px;
-    padding: 20px;
-    border: 2px solid $new-aquamarine;
-    p {
-        @include main-bolder-text-desktop;
-    }
-    transform: rotateX(-97deg);
-    -webkit-transform: rotateX(-97deg);
-    -ms-transform: rotateX(-97deg);
-}
-
-.inline-box:hover {
-    .explainer-popup {
-        display: block;
-        visibility: visible;
-        z-index: $over-base-z;
-        position: absolute;
-        top: -220px;
-        left: 50px;
-        width: 300px;
-        min-height: 180px;
-        background-color: $new-space;
-        border-radius: 8px;
-        padding: 20px;
-        border: 2px solid $new-aquamarine;
-        p {
-            @include main-bolder-text-desktop;
-            color: $new-white;
-            z-index: $header-z;
-            text-align: center;
-        }
-        -webkit-transition: all 0.5s ease; /* Safari prior 6.1 */
-        transition: all 0.5s ease;
-        transform: rotateX(0deg);
-        -webkit-transform: rotateX(0deg);
-        -ms-transform: rotateX(0deg);
-    }
-}
-
-.mobile-skill-box {
-    display: none;
-}
-.close {
-    display: none;
-}
-
 .cv-box {
     margin-top: 20px;
     a {
@@ -172,41 +59,10 @@
     }
 }
 
-.skill {
-    cursor: default;
-}
-
-.skill:hover {
-    color: $new-coral;
-}
-
-.separator {
-    color: $new-coral;
-}
-
-.about-image-box {
-    margin-left: auto;
-    position: relative;
-    z-index: 0;
-    max-width: 80vw;
-    border-radius: 10px;
-    height: 530px;
-    box-shadow: 0 1.7px 2.2px rgba(0, 0, 0, 0.02),
-        0 4.1px 5.3px rgba(0, 0, 0, 0.028), 0 7.8px 10px rgba(0, 0, 0, 0.035),
-        0 13.8px 17.9px rgba(0, 0, 0, 0.042),
-        0 25.9px 33.4px rgba(0, 0, 0, 0.05), 0 62px 80px rgba(0, 0, 0, 0.07);
-}
-
-.profile-image {
-    position: relative;
-    z-index: 0;
-}
-
 @include for-small-desktop {
     .about-container {
         position: relative;
         background-color: $new-white;
-        // height: 700px;
     }
 
     .skill-collections {
@@ -219,12 +75,6 @@
     }
     .explainer-popup {
         top: -230px;
-    }
-
-    .inline-box:hover {
-        .explainer-popup {
-            top: -230px;
-        }
     }
 }
 
@@ -251,36 +101,12 @@
         display: flex;
         flex-direction: row;
     }
-    .skill {
-        cursor: pointer;
-    }
-
-    // .skill-active {
-    //     color: $new-coral;
-    //     // text-decoration: underline;
-    //     // cursor: pointer;
-    // }
-
-    .explainer-popup {
-        width: 250px;
-        top: -250px;
-        left: -30px;
-    }
-
-    .inline-box:hover {
-        .explainer-popup {
-            width: 250px;
-            top: -250px;
-            left: -30px;
-        }
-    }
 }
 
 @include for-phone-only {
     .about-container {
         position: relative;
         background-color: $new-white;
-        // height: 1000px;
     }
 
     .about-headline {
@@ -305,93 +131,14 @@
         margin: auto;
         padding-left: 10px;
     }
-    .about-image-box {
-        margin: auto;
-    }
-
-    .explainer-popup {
-        display: none;
-    }
-
-    .inline-box:hover {
-        .explainer-popup {
-            display: none;
-        }
-    }
-
-    .mobile-skill-box-empty {
-        position: relative;
-        display: block;
-        z-index: $over-base-z;
-        width: auto;
-        margin-bottom: 30px;
-        background-color: $new-dark-grey;
-        border-radius: 8px;
-        padding: 3px;
-        border: 2px solid $new-aquamarine;
-        -webkit-transition: all 0.3s ease; /* Safari prior 6.1 */
-        transition: all 0.3s ease;
-        transform: scaleY(0);
-        -webkit-transform: scaleY(0);
-        -ms-transform: scaleY(0);
-    }
-
-    .mobile-skill-box {
-        position: relative;
-        display: block;
-        z-index: $over-base-z;
-        width: auto;
-        margin-bottom: 30px;
-        background-color: $new-dark-grey;
-        border-radius: 8px;
-        padding: 20px;
-        padding-bottom: 30px;
-        border: 2px solid $new-aquamarine;
-        p {
-            @include main-bolder-text-desktop;
-            color: $new-white;
-            z-index: $header-z;
-            text-align: center;
-        }
-        -webkit-transition: all 0.3s ease; /* Safari prior 6.1 */
-        transition: all 0.3s ease;
-        transform: scaleY(1);
-        -webkit-transform: scaleY(1);
-        -ms-transform: scaleY(1);
-    }
-    .close {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        width: 32px;
-        height: 32px;
-        opacity: 0.3;
-    }
-    .close:before,
-    .close:after {
-        position: absolute;
-        left: 15px;
-        content: ' ';
-        height: 33px;
-        width: 2px;
-        background-color: white;
-    }
-    .close:before {
-        transform: rotate(45deg);
-    }
-    .close:after {
-        transform: rotate(-45deg);
-    }
 }
 
 @include for-tiny-phone-only {
     .about-container {
         position: relative;
         background-color: $new-white;
-        // height: 1000px;
     }
     .skill-collections {
-        // padding-right: 30px;
         a {
             display: inline-block;
             padding-top: 10px;

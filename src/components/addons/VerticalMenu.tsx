@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import smoothScroll from 'smoothscroll-polyfill'
 import ScrollContext from '../../context/scrollContext'
-import styles from './verticalMenu.module.scss'
+import * as styles from './verticalMenu.module.scss'
 
 const VerticalMenu = props => {
     const scrollY = useContext(ScrollContext)

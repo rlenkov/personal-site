@@ -2,19 +2,39 @@ require('dotenv').config()
 
 module.exports = {
     siteMetadata: {
-        title: `Richard Lenkovits`,
-        description: `Developer site of Richard Lenkovits.`,
-        author: `@pencillr`,
+        title: 'Richard Lenkovits',
+        description: 'Developer site of Richard Lenkovits.',
+        author: '@rlenkov',
         mapsKey: process.env.GOOGLE_API_TOKEN,
+        cvLink: 'https://drive.google.com/file/d/148o4h2LzgPBMCI6dTr4OzL3dp8pstwxA/view?usp=sharing'
     },
     plugins: [
-        `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-sass`,
+        'gatsby-plugin-react-helmet',
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: 'gatsby-plugin-sass',
             options: {
-                name: `images`,
+                sassOptions: {
+                    includePaths: [
+                        'src/styles',
+                        'src/components',
+                        'src/components/addons',
+                        'src/components/pages',
+                    ],
+                },
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'images',
                 path: `${__dirname}/src/images`,
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'content',
+                path: `${__dirname}/content/`,
             },
         },
         {
@@ -26,53 +46,33 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-source-contentful`,
+            resolve: 'gatsby-plugin-google-fonts',
             options: {
-                spaceId: process.env.CONTENTFUL_SPACE_ID,
-                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+                fonts: ['Biryani'],
             },
         },
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
+        'gatsby-plugin-image',
+        'gatsby-plugin-typescript',
         {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
-            options: {
-                fonts: [
-                    {
-                        family: `Biryani`,
-                        subsets: [`latin`],
-                        variants: [`200`, `300`, `400`, `600`, `700`, `800`],
-                    },
-                ],
-            },
-        },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
-        `gatsby-plugin-typescript`,
-        {
-            resolve: `gatsby-transformer-remark`,
+            resolve: 'gatsby-transformer-remark',
             options: {
                 plugins: [
-                    {
-                        resolve: `gatsby-remark-images-contentful`,
-                        options: {
-                            // It's important to specify the maxWidth (in pixels) of
-                            // the content container as this plugin uses this as the
-                            // base for generating different widths of each image.
-                            maxWidth: 590,
-                        },
-                    },
+                    'gatsby-remark-copy-linked-files',
                 ],
             },
         },
         {
-            resolve: `gatsby-plugin-manifest`,
+            resolve: 'gatsby-plugin-manifest',
             options: {
-                name: `Richard Lenkovits`,
-                short_name: `Porfolio`,
-                start_url: `/`,
-                background_color: `#17181D`,
-                theme_color: `#17181D`,
-                display: `minimal-ui`,
-                icon: `src/images/logoeri.png`, // This path is relative to the root of the site.
+                name: 'Richard Lenkovits',
+                short_name: 'Porfolio',
+                start_url: '/',
+                background_color: '#17181D',
+                theme_color: '#17181D',
+                display: 'minimal-ui',
+                icon: 'src/images/logo_rilenk.svg', // this is temporary.
             },
         },
     ],

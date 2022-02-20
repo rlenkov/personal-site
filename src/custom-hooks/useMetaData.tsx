@@ -9,6 +9,7 @@ export default () => {
                         title
                         description
                         mapsKey
+                        cvLink
                     }
                 }
             }

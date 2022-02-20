@@ -77,35 +77,6 @@
     }
 }
 
-.svg-box {
-    position: absolute;
-    bottom: 0;
-    left: 50px;
-    width: 650px;
-    height: 650px;
-    z-index: $over-header-z;
-    @include x-slide-delayed-opacity-reset($default-slide-in-time);
-}
-
-.svg-box-gone {
-    position: absolute;
-    bottom: 0;
-    @include x-slide-delayed-opacity(100%);
-    left: 50px;
-    width: 650px;
-    height: 650px;
-    z-index: $over-header-z;
-}
-.svg-component {
-    position: relative;
-    width: 700px;
-    height: 700px;
-    z-index: $over-header-z;
-    svg {
-        z-index: $over-header-z;
-    }
-}
-
 @include for-small-desktop {
     .welcome-message-box {
         margin-top: 5%;
@@ -117,31 +88,6 @@
         margin-left: auto;
         width: 60%;
     }
-    .svg-box {
-        position: absolute;
-        bottom: 0;
-        left: 50px;
-        width: 550px;
-        height: 550px;
-        z-index: $over-header-z;
-    }
-    .svg-box-gone {
-        position: absolute;
-        bottom: 0;
-        left: 50px;
-        width: 550px;
-        height: 550px;
-        z-index: $over-header-z;
-    }
-    .svg-component {
-        position: relative;
-        width: 600px;
-        height: 600px;
-        z-index: $over-header-z;
-        svg {
-            z-index: $over-header-z;
-        }
-    }
 }
 
 @include for-tablet-only {
@@ -150,31 +96,6 @@
     }
     .welcome-message-box-gone {
         width: 60%;
-    }
-    .svg-box {
-        position: absolute;
-        bottom: 0;
-        left: 50px;
-        width: 450px;
-        height: 450px;
-        z-index: $over-header-z;
-    }
-    .svg-box-gone {
-        position: absolute;
-        bottom: 0;
-        left: 50px;
-        width: 450px;
-        height: 450px;
-        z-index: $over-header-z;
-    }
-    .svg-component {
-        position: relative;
-        width: 500px;
-        height: 500px;
-        z-index: $over-header-z;
-        svg {
-            z-index: $over-header-z;
-        }
     }
 }
 @include for-phone-only {
@@ -185,30 +106,5 @@
     .welcome-message-box-gone {
         margin-top: 15vh;
         width: 90%;
-    }
-    .svg-box {
-        position: absolute;
-        bottom: 0;
-        left: 50px;
-        width: 400px;
-        height: 60vh;
-        z-index: $over-header-z;
-    }
-    .svg-box-gone {
-        position: absolute;
-        bottom: 0;
-        left: 50px;
-        width: 400px;
-        height: 60vh;
-        z-index: $over-header-z;
-    }
-    .svg-component {
-        position: relative;
-        width: 100vw;
-        height: 70vh;
-        z-index: $over-header-z;
-        svg {
-            z-index: $over-header-z;
-        }
     }
 }

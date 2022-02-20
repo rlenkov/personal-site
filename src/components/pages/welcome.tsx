@@ -1,30 +1,29 @@
 import React, { useEffect, useState } from 'react'
-import Illustration from '../../assets/undraw_investment.svg'
-import welcomeStyles from './welcome.module.scss'
+import * as welcomeStyles from './welcome.module.scss'
 
 interface Props {
     runOpen?: boolean
 }
 
 const Welcome = ({ runOpen }: Props) => {
-    const [showed, setShowed] = useState(false)
+    const [showed, setShowed] = useState(true)
 
-    useEffect(() => {
-        const isClient =
-            typeof window === 'object' && typeof document === 'object'
-        if (isClient) {
-            document.body.style.overflow = 'hidden'
-            document.body.style.height = '100vh'
-        }
-        const timer = setTimeout(() => {
-            setShowed(true)
-            document.body.style.overflow = 'visible'
-            document.body.style.height = 'unset'
-        }, 3000)
-        return () => {
-            clearTimeout(timer)
-        }
-    }, [runOpen])
+    // useEffect(() => {
+    //     const isClient =
+    //         typeof window === 'object' && typeof document === 'object'
+    //     if (isClient) {
+    //         document.body.style.overflow = 'hidden'
+    //         document.body.style.height = '100vh'
+    //     }
+    //     const timer = setTimeout(() => {
+    //         setShowed(true)
+    //         document.body.style.overflow = 'visible'
+    //         document.body.style.height = 'unset'
+    //     }, 3000)
+    //     return () => {
+    //         clearTimeout(timer)
+    //     }
+    // }, [runOpen])
 
     const getStateOfComponent = () => {
         if (showed) {
@@ -38,9 +37,6 @@ const Welcome = ({ runOpen }: Props) => {
 
     return (
         <section className={getStateOfComponent()}>
-            <div className={runOpen ? welcomeStyles.svgBox : welcomeStyles.svgBoxGone}>
-                <Illustration className={welcomeStyles.svgComponent} />
-            </div>
             <div
                 className={
                     runOpen

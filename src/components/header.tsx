@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import headerStyles from './header.module.scss'
+import * as headerStyles from './header.module.scss'
 
 interface Props {
     siteTitle: string

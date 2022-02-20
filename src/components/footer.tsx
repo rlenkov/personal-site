@@ -1,10 +1,11 @@
 import React from 'react'
 import Maps from './addons/Maps'
 import useMetaData from '../custom-hooks/useMetaData'
-import footerStyles from './footer.module.scss'
+import * as footerStyles from './footer.module.scss'
 
-const Footer = props => {
+const Footer = () => {
     const meta = useMetaData()
+    const currentYear = new Date().getFullYear()
     return (
         <footer className={footerStyles.footer}>
             <div className={footerStyles.mapBox}>
@@ -16,7 +17,7 @@ const Footer = props => {
             </div>
             <div className={footerStyles.footerBox}>
                 <p>Richard Lenkovits</p>
-                <p>Copyright 2020</p>
+                <p>{`Copyright ${currentYear}`}</p>
             </div>
         </footer>
     )

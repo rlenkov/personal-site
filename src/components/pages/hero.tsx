@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Img from 'gatsby-image'
-import heroStyles from './hero.module.scss'
+import * as heroStyles from './hero.module.scss'
 import { useStaticQuery, graphql } from 'gatsby'
 import Welcome from './welcome'
 import useWindowSize from '../../custom-hooks/useWindowSize'
@@ -43,33 +42,15 @@ const Hero = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            profile: contentfulAsset(
-                id: { eq: "a14cac87-c59e-56fb-9e76-4babb241f423" }
-            ) {
-                title
-                fixed(width: 300) {
-                    width
-                    height
-                    src
-                    srcSet
-                }
-            }
-            background: contentfulAsset(
-                id: { eq: "af73a0ef-464d-512f-9734-979dd6eb1883" }
-            ) {
-                title
-                fluid(quality: 100) {
-                    src
+            file(relativePath: { eq: "_assetbox/astro-self-edited-med.jpg" }) {
+                childImageSharp {
+                    fluid(quality: 100) {
+                        src
+                    }
                 }
             }
         }
     `)
-
-    const isMobile = () => {
-        if (size) {
-            return size.width <= 500
-        }
-    }
 
     const isTablet = () => {
         if (size) {
@@ -96,7 +77,7 @@ const Hero = () => {
               }
         return (
             <div style={slide} className={heroStyles.slidingTitles}>
-                {titles.map(text => {
+                {titles.map((text) => {
                     return (
                         <span
                             className={heroStyles.changelingText}
@@ -111,7 +92,7 @@ const Hero = () => {
     }
 
     const backgroundStyle = {
-        backgroundImage: `url('${data.background.fluid.src}')`,
+        backgroundImage: `url('${data.file.childImageSharp.fluid.src}')`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'right',
@@ -142,12 +123,6 @@ const Hero = () => {
                         <h2>ready to get work done for you!</h2>
                     </div>
                 </div>
-                {/* <div className={heroStyles.heroImageBox}>
-                    <Img
-                        className={heroStyles.profileImage}
-                        fixed={data.profile.fixed}
-                    />
-                </div> */}
             </div>
         </section>
     )

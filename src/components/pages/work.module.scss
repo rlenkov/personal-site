@@ -2,7 +2,7 @@
 
 .work-container {
     background-color: $new-space;
-    height: 900px;
+    height: 1500px;
     min-height: 110vh;
     overflow: hidden;
 }
@@ -12,6 +12,36 @@
     padding: 100px 200px 50px 300px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+}
+
+.svg-box {
+    position: relative;
+}
+
+.svg-top {
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+}
+
+.svg-bot {
+    z-index: 2;
+    position: absolute;
+    top: -100px;
+    left: -20px;
+    width: 100vw;
+    height: 100vw;
+}
+
+.svg-portal {
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    top: -100px;
+    left: -20px;
 }
 
 .text-block-closed {
@@ -64,92 +94,6 @@
         margin-left: 100px;
         @include x-slide-delayed-opacity(600px);
     }
-}
-
-.description {
-    position: relative;
-    margin-top: 50px;
-    z-index: $over-base-z;
-    p {
-        @include main-text-desktop;
-        color: $new-white;
-        margin-bottom: 5px;
-        z-index: $over-base-z;
-    }
-    strong {
-        display: inline-block;
-        @include main-text-desktop;
-        color: $new-white;
-        font-weight: 600;
-        margin-bottom: 30px;
-        z-index: $over-base-z;
-    }
-}
-
-.decoration-box-large {
-    position: absolute;
-    top: 60px;
-    left: -100px;
-    width: 7vw;
-    height: 7vw;
-    background-color: $new-aquamarine;
-    z-index: $base-z;
-    @include custom-shadows;
-}
-
-.decoration-box-medium {
-    position: absolute;
-    top: 200px;
-    left: 280px;
-    width: 5vw;
-    height: 5vw;
-    background-color: $new-aquamarine;
-    z-index: $base-z;
-    @include custom-shadows;
-}
-
-.decoration-box-little {
-    position: absolute;
-    bottom: -150px;
-    left: 500px;
-    width: 2vw;
-    height: 4vw;
-    background-color: $new-coral;
-    z-index: $base-z;
-    @include custom-shadows;
-}
-
-.decoration-box-small {
-    position: absolute;
-    bottom: -30px;
-    right: 100px;
-    width: 2vw;
-    height: 2vw;
-    background-color: $new-coral;
-    z-index: $base-z;
-    @include custom-shadows;
-}
-
-.decoration-box-tiny {
-    position: absolute;
-    top: 150px;
-    right: 200px;
-    width: 2vw;
-    height: 1vw;
-    background-color: $new-aquamarine;
-    z-index: $base-z;
-    @include custom-shadows;
-}
-
-.decoration-box-miny {
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
-    width: 1vw;
-    height: 0.5vw;
-    background-color: $new-coral;
-    z-index: $base-z;
-    @include custom-shadows;
 }
 
 @include for-small-desktop {
@@ -268,16 +212,6 @@
             margin-left: 20vw;
         }
     }
-
-    .decoration-box-large {
-        position: absolute;
-        top: 60px;
-        left: -90px;
-        width: 1vw;
-        height: 2vw;
-        background-color: $new-aquamarine;
-        z-index: $base-z;
-    }
 }
 
 @include for-phone-only {
@@ -304,41 +238,6 @@
     .text-block {
         margin-left: 0px;
         margin-bottom: 50px;
-    }
-
-    .description {
-        position: relative;
-        margin-top: 100px;
-    }
-
-    .decoration-box-large {
-        position: absolute;
-        top: 60px;
-        left: 1px;
-        width: 1vw;
-        height: 2vw;
-        background-color: $new-aquamarine;
-        z-index: $base-z;
-    }
-
-    .decoration-box-little {
-        position: absolute;
-        bottom: -200px;
-        left: 500px;
-        width: 2vw;
-        height: 10vw;
-        background-color: $new-coral;
-        z-index: $base-z;
-    }
-
-    .decoration-box-medium {
-        position: absolute;
-        top: 200px;
-        left: 280px;
-        width: 6vw;
-        height: 6vw;
-        background-color: $new-aquamarine;
-        z-index: $base-z;
     }
 }
 

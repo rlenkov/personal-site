@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:krita="http://krita.org/namespaces/svg/krita"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="1097.28pt" height="1457.28pt"
+  viewBox="0 0 1097.28 1457.28">
+  <defs>
+    <radialGradient id="gradient-p0" gradientUnits="objectBoundingBox" cx="0.502294875668018" cy="0.505244032960623"
+      fx="0.502294875668018" fy="0.505244032960623" r="0.468371413771796" spreadMethod="pad">
+      <stop stop-color="#160f3a" offset="0.735" stop-opacity="1" />
+      <stop stop-color="#6e56f5" offset="1" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="gradient-p1" gradientUnits="objectBoundingBox" cx="0.502294875668018" cy="0.505244032960623"
+      fx="0.502294875668018" fy="0.505244032960623" r="0.468371413771796" spreadMethod="pad">
+      <stop stop-color="#160f3a" offset="0.7705" stop-opacity="1" />
+      <stop stop-color="#6e56f5" offset="1" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="gradient-p2" gradientUnits="objectBoundingBox" cx="0.502294875668018" cy="0.505244032960623"
+      fx="0.502294875668018" fy="0.505244032960623" r="0.468371413771796" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0.8169" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="gradient-p3" gradientUnits="objectBoundingBox" cx="0.502294875668018" cy="0.505244032960623"
+      fx="0.502294875668018" fy="0.505244032960624" r="0.442399749398636" spreadMethod="pad">
+      <stop stop-color="#fafa00" offset="0.5068" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="gradient-p4" gradientUnits="objectBoundingBox" cx="0.502294875668018" cy="0.505244032960623"
+      fx="0.502294875668018" fy="0.505244032960624" r="0.442399749398636" spreadMethod="pad">
+      <stop stop-color="#fafa00" offset="0" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+  <ellipse id="shape0"
+    transform="matrix(0.738129362839702 0.674659087637352 -0.674659087637352 0.738129362839702 796.053392171952 681.897052405371)"
+    rx="141.460437359817" ry="94.3221912726012" cx="141.460437359817" cy="94.3221912726012" fill="url(#gradient-p0)"
+    fill-rule="evenodd" stroke="#1a1a1a" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel">
+    <animateTransform attributeName="transform" type="rotate" from="0 141.460437359817 94.3221912726012"
+      to="360 141.460437359817 94.3221912726012" dur="10s" additive="sum" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse id="shape01"
+    transform="matrix(0.67353574698907 -0.739154599416582 0.739154599416582 0.67353574698907 673.829223561744 881.924997478768)"
+    rx="135.805183030203" ry="94.3221912726012" cx="135.805183030203" cy="94.3221912726012" fill="url(#gradient-p1)"
+    fill-rule="evenodd" stroke="#1a1a1a" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel">
+        <animateTransform attributeName="transform" type="rotate" from="0 135.805183030203 94.3221912726012"
+      to="360 135.805183030203 94.3221912726012" dur="10s" additive="sum" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse id="shape02"
+    transform="matrix(0.999965231118315 -0.00833628803037345 0.00833628803037345 0.999965231118315 702.332002354489 755.196108209886)"
+    rx="131.72541276253" ry="94.3221912726012" cx="131.72541276253" cy="94.3221912726012" fill="url(#gradient-p2)"
+    fill-rule="evenodd" stroke="#1a1a1a" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel">
+        <animateTransform attributeName="transform" type="rotate" from="0 131.72541276253 94.3221912726012"
+      to="360 131.72541276253 94.3221912726012" dur="5s" additive="sum" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse id="shape0"
+    transform="matrix(-0.00833628820900762 -0.999965252545819 0.999965252545819 -0.00833628820900762 740.90472450905 966.675094387089)"
+    rx="122.404746045924" ry="94.3221912726012" cx="122.404746045924" cy="94.3221912726012" fill="url(#gradient-p3)"
+    fill-rule="evenodd" stroke="#1a1a1a" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel">
+        <animateTransform attributeName="transform" type="rotate" from="0 122.404746045924 94.3221912726012"
+      to="360 122.404746045924 94.3221912726012" dur="5s" additive="sum" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse id="shape03"
+    transform="matrix(-0.00833628803037345 -0.999965231118315 0.999965231118315 -0.00833628803037345 741.589838668463 928.759336680419)"
+    rx="84.3405806701924" ry="94.3221912726012" cx="84.3405806701924" cy="94.3221912726012" fill="url(#gradient-p4)"
+    fill-rule="evenodd" stroke="#1a1a1a" stroke-width="0" stroke-linecap="square" stroke-linejoin="bevel">
+        <animateTransform attributeName="transform" type="rotate" from="0 84.3405806701924 94.3221912726012"
+      to="360 84.3405806701924 94.3221912726012" dur="2s" additive="sum" repeatCount="indefinite" />
+  </ellipse>
+</svg>

@@ -1,0 +1,183 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:krita="http://krita.org/namespaces/svg/krita"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="1097.28pt" height="1457.28pt"
+  viewBox="0 0 1097.28 1457.28">
+  <defs>
+    <linearGradient id="gradient_bot0" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient_bot1" gradientUnits="objectBoundingBox" x1="0.199113105980066" y1="1.15975069909464"
+      x2="0.830176450117196" y2="-0.00657910223249836" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient_bot2" gradientUnits="objectBoundingBox" x1="0.10872786938637" y1="0.825054250067743"
+      x2="0.916494340448453" y2="0.0981732518269133" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <radialGradient id="gradient_bot3" gradientUnits="objectBoundingBox" cx="0.529121610603604" cy="0.487705429335614"
+      fx="0.547649511595306" fy="0.639676961490069" r="0.491921812297885" spreadMethod="pad">
+      <stop stop-color="#e43beb" offset="0" stop-opacity="1" />
+      <stop stop-color="#8443de" offset="0.923500001430511" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="gradient_bot4" gradientUnits="objectBoundingBox" x1="1.7841191267563" y1="0.609292960919336"
+      x2="-0.109298923997365" y2="0.378854576324482" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <radialGradient id="gradient_bot5" gradientUnits="objectBoundingBox" cx="0.586047925045703" cy="0.539395552449037"
+      fx="0.838792573307954" fy="0.844932675431239" r="0.396922824557913" spreadMethod="pad">
+      <stop stop-color="#fafa00" offset="0.117486335337162" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="0.694000005722046" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="gradient_bot6" gradientUnits="objectBoundingBox" x1="0.291994792798079" y1="0.525920698653946"
+      x2="0.908479244048364" y2="1.03848200234053" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient_bot7" gradientUnits="objectBoundingBox" x1="0.368181712679478" y1="0.546791634369701"
+      x2="0.998317807564864" y2="1.18156956387464" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient_bot8" gradientUnits="objectBoundingBox" x1="0.371099972915438" y1="0.518934919806212"
+      x2="0.962280392287964" y2="1.0989558097947" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+  <path id="shape0" transform="matrix(0.999999810455155 0 0 0.999999810455155 154.43998866323 223.739996627794)"
+    fill="url(#gradient_bot0)" fill-rule="evenodd" stroke="#0a0a00" stroke-width="1.6992" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M0 320.76L0.36 313.38C51.4158 206.014 127.828 106.176 222.3 11.7L246.96 0C316.462 2.89906 374.344 22.9852 421.56 56.34C483.021 110.965 532.416 168.48 554.232 199.754L555.84 213.518C503.036 304.937 389.207 411.331 335.077 450.367C282.032 469.077 211.18 486.124 97.3196 460.04C63.4854 415.473 29.8412 370.652 0 320.76Z"
+    sodipodi:nodetypes="cccccccccc" />
+  <path id="shape1" transform="matrix(0.999999810455155 0 0 0.999999810455155 252.014125939017 374.365937105054)"
+    fill="url(#gradient_bot1)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0"
+    stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 308.46L2.41829 300.123L250.995 5.98054C257.781 1.22008 265.858 -0.935736 274.669 0.380234C303.522 11.0319 356.484 8.20985 455.405 63.7653C454.47 80.1346 344.096 221.215 237.766 298.654C155.647 328.931 82.2447 326.39 0 308.46Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape2" transform="matrix(0.999999810455155 0 0 0.999999810455155 155.159994461514 229.500004700239)"
+    fill="url(#gradient_bot2)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0"
+    stroke-linecap="square" stroke-linejoin="bevel"
+    d="M236.16 0L360.322 146.774C357.68 146.749 354.598 147.087 348.358 151.355L99.9086 445.116C98.7826 448.183 97.4243 449.653 97.2996 453.389C58.8533 404.74 16.4963 342.73 0 314.28L0.81 307.26C52.5828 196.842 129.857 103.923 221.22 7.02C228.911 3.13118 227.082 4.847 236.16 0Z"
+    sodipodi:nodetypes="ccccccccc" />
+  <ellipse id="shape01"
+    transform="matrix(0.801819697014475 0.597565816466727 -0.597565816466727 0.801819697014475 384.700624260444 279.354680571649)"
+    rx="32.6259138598612" ry="35.760411748351" cx="32.6259138598612" cy="35.760411748351" fill="url(#gradient_bot3)"
+    fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0" stroke-linecap="square"
+    stroke-linejoin="bevel">
+    <animate id="xincrease" attributeName="rx" from="-10" to="10" dur="1s" additive="sum" begin="0s;xincrease.end+1s"
+      fill="remove" repeatCount="1" />
+    <animate id="xincrease" attributeName="rx" from="10" to="-10" dur="1s" additive="sum" begin="1s;xincrease.end+2s"
+      fill="remove" repeatCount="1" />
+    <animate id="yincrease" attributeName="ry" from="-10" to="10" dur="1s" additive="sum" begin="0s;yincrease.end+1s"
+      fill="remove" repeatCount="1" />
+    <animate id="yincrease" attributeName="ry" from="10" to="-10" dur="1s" additive="sum" begin="1s;yincrease.end+2s"
+      fill="remove" repeatCount="1" />
+  </ellipse>
+  <ellipse id="shape011"
+    transform="matrix(0.801819716388883 0.59756583090574 -0.59756583090574 0.801819716388883 386.008241130333 302.366434195885)"
+    rx="17.3343181779467" ry="18.1752346379189" cx="17.3343181779467" cy="18.1752346379189" fill="url(#gradient_bot4)"
+    fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape111"
+    transform="matrix(0.998477791955252 0.0551532304418929 -0.0551532304418929 0.998477791955252 365.973772459524 306.079269828564)"
+    fill="url(#gradient_bot5)" fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-opacity="0"
+    stroke-linecap="square" stroke-linejoin="bevel"
+    d="M17.4629 30.96C31.7507 30.6022 36.6897 24.0717 32.2799 11.3687C27.8701 -1.33435 17.1101 -3.39189 0 5.19608C1.05836 19.5094 6.87933 28.0973 17.4629 30.96Z"
+    sodipodi:nodetypes="czcc">
+    <animate id="op" attributeName="stroke-opacity" values="1;0" dur="1s" additive="sum" begin="0s;op.end+1s"
+      fill="remove" repeatCount="1" />
+    <animate id="op" attributeName="stroke-opacity" values="0;1" dur="1s" additive="sum" begin="1s;op.end+2s"
+      fill="remove" repeatCount="1" />
+  </path>
+  <ellipse id="shape02"
+    transform="matrix(0.44841444513841 -0.61183395804129 0.61183395804129 0.44841444513841 292.550412038935 424.33396626655)"
+    rx="26.962596341364" ry="18.4896632340076" cx="26.962596341364" cy="18.4896632340076" fill="#6533ab"
+    stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape03"
+    transform="matrix(0.448414416655379 -0.611833919177944 0.611833919177944 0.448414416655379 293.113630129328 423.017902399575)"
+    rx="26.1253584621599" ry="14.326809479249" cx="26.1253584621599" cy="14.326809479249" fill="#8443de"
+    fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape04"
+    transform="matrix(0.750602300329485 0.109601667703158 -0.109601667703158 0.750602300329485 291.655069163688 384.428273186354)"
+    fill="#381c5e" fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M31.4743 39.4638L0 25.588C1.64836 11.9512 0.382737 6.62437 16.6934 0L37.9046 29.9877C37.6374 33.868 39.5695 38.5942 31.4743 39.4638Z"
+    sodipodi:nodetypes="ccccc">
+    <animateTransform id="handle3" attributeName="transform" type="rotate" from="0 32 30" to="-180 35 35"
+      begin="2s;handle3.end+2.2s" dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="handle3" attributeName="transform" type="rotate" from="-180 35 35" to="0 32 30"
+      begin="2.2s;handle3.end+2.4s" dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+  </path>
+  <ellipse id="shape05"
+    transform="matrix(0.517646363265072 -0.554489407995494 0.554489407995494 0.517646363265072 322.141272300637 385.464021361044)"
+    rx="26.962596341364" ry="18.4896632340076" cx="26.962596341364" cy="18.4896632340076" fill="#6533ab"
+    stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape0111"
+    transform="matrix(0.517646330384468 -0.554489372774639 0.554489372774639 0.517646330384468 322.856227516962 384.223828797489)"
+    rx="26.1253584621599" ry="14.326809479249" cx="26.1253584621599" cy="14.326809479249" fill="#8443de"
+    fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape021"
+    transform="matrix(0.732365307016738 0.197629324901423 -0.197629324901423 0.732365307016738 325.973116741325 345.732638043446)"
+    fill="#381c5e" fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M31.4743 39.4638L0 25.588C1.64836 11.9512 0.382737 6.62437 16.6934 0L37.9046 29.9877C37.6374 33.868 39.5695 38.5942 31.4743 39.4638Z"
+    sodipodi:nodetypes="ccccc">
+    <animateTransform id="handle2" attributeName="transform" type="rotate" from="0 32 30" to="-180 35 35"
+      begin="3s;handle2.end+3.2s" dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="handle2" attributeName="transform" type="rotate" from="-180 35 35" to="0 32 30"
+      begin="3.2s;handle2.end+3.4s" dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+  </path>
+  <ellipse id="shape06"
+    transform="matrix(0.439050117485198 -0.618588114432361 0.618588114432361 0.439050117485198 260.618916114616 462.62350411926)"
+    rx="26.962596341364" ry="18.4896632340076" cx="26.962596341364" cy="18.4896632340076" fill="#6533ab"
+    stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape01111"
+    transform="matrix(0.439050089596983 -0.618588075139995 0.618588075139995 0.439050089596983 261.162037902831 461.299020340872)"
+    rx="26.1253584621599" ry="14.326809479249" cx="26.1253584621599" cy="14.326809479249" fill="#8443de"
+    fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape0211"
+    transform="matrix(0.752183505599254 0.0981644889312465 -0.0981644889312465 0.752183505599254 259.116295782622 422.736062683573)"
+    fill="#381c5e" fill-rule="evenodd" stroke="#000000" stroke-width="0.72" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M31.4743 39.4638L0 25.588C1.64836 11.9512 0.382737 6.62437 16.6934 0L37.9046 29.9877C37.6374 33.868 39.5695 38.5942 31.4743 39.4638Z"
+    sodipodi:nodetypes="ccccc">
+    <animateTransform id="handle1" attributeName="transform" type="rotate" from="0 32 30" to="-180 35 35"
+      begin="3s;handle1.end+3.2s" dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="handle1" attributeName="transform" type="rotate" from="-180 35 35" to="0 32 30"
+      begin="3.2s;handle1.end+3.4s" dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+  </path>
+  <path id="shape21" transform="matrix(0.999999889927999 0 0 0.999999889927999 563.759990696297 321.840017112244)"
+    fill="none" stroke="#000000" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L31.68 41.04L70.92 48.24L34.92 7.38Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape3" transform="matrix(0.999999889927999 0 0 0.999999889927999 556.593280056307 322.052611541436)"
+    fill="url(#gradient_bot6)" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M7.38219 0L0 0.890955L38.311 48.8752L82.6042 56.1301L77.7676 47.6024L38.9474 40.8566Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape4" transform="matrix(0.999999889927999 0 0 0.999999889927999 584.46743731973 326.889227068497)"
+    fill="#1a1a1a" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 9.8005L11.9642 25.2013L26.2195 28.6378L42.8931 12.8552L32.7108 11.3279L23.1648 0Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape5" transform="matrix(0.999999889927999 0 0 0.999999889927999 607.88681213107 326.380110224771)"
+    fill="#1a1a1a" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 0L8.52771 0.636396L19.601 12.6006L8.78227 11.837Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape6" transform="matrix(0.999999889927999 0 0 0.999999889927999 552.767828418498 318.569725667962)"
+    fill="#583df5" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M67.1505 17.4215C99.8472 4.54087 120.734 7.67199 127.353 15.7192C137.281 27.79 255.905 272.181 187.488 286.261C119.072 300.341 107.934 245.388 65.7122 268.95C23.4904 292.512 134.759 347.138 129.703 367.974C124.648 388.811 103.37 392.468 74.2096 374.084C45.0496 355.7 60.3122 308.888 38.7122 316.11C24.3122 320.925 -8.74024 350.994 2.1696 369.247C-3.58652 379.023 145.697 487.777 157.872 496.11C170.048 504.444 163.977 497.58 177.672 506.55C232.163 494.667 326.069 530.123 196.752 483.15C178.054 484.894 185.354 498.612 153.377 472.598C121.4 446.584 34.1344 386.102 26.1122 372.99C18.09 359.879 37.3174 323.534 45.1922 352.47C59.7816 393.53 74.6759 390.458 88.4649 398.267C109.149 409.98 136.233 403.206 145.995 389.357C155.757 375.508 153.945 352.925 146.25 344.81C138.554 336.695 134.747 336.754 130.872 333.39C117.581 323.473 118.821 326.333 108.912 318.99C99.0032 311.648 70.6806 294.472 87.6722 286.23C102.156 277.9 109.788 290.876 129.072 295.95C148.356 301.024 169.271 306.101 185.961 305.098C202.65 304.096 208.333 295.952 218.035 272.006C227.737 248.06 221.845 234.149 208.362 175.783C194.879 117.417 141.742 17.1122 132.46 6.00811C126.273 -1.39463 102.845 -4.38777 61.3922 11.5503C62.9642 13.5834 63.8025 16.6825 67.1505 17.4215Z"
+    sodipodi:nodetypes="czzzzzzczcczzczzzczczzzzzcc" />
+  <path id="shape0111" transform="matrix(0.999999929664425 0 0 0.999999929664425 239.399996654483 371.880013258253)"
+    fill="url(#gradient_bot7)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0"
+    stroke-linecap="square" stroke-linejoin="bevel"
+    d="M13.2033 310.95L0 294.637L236.178 0L252.72 18.6581L13.2033 310.95" sodipodi:nodetypes="ccccc" />
+  <path id="shape02111"
+    transform="matrix(-0.999999091160697 -0.00130662786731994 0.00130662786731994 -0.999999091160697 504.135107544976 688.588430097289)"
+    fill="url(#gradient_bot8)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0"
+    stroke-linecap="square" stroke-linejoin="bevel"
+    d="M12.6963 297.269L0 281.674L227.108 0L243.015 17.8372L12.6963 297.269" sodipodi:nodetypes="ccccc" />
+</svg>

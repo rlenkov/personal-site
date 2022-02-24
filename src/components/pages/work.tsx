@@ -1,4 +1,7 @@
 import React, { useContext } from 'react'
+import MachineTop from '../../images/machine_top.svg'
+import MachineBot from '../../images/machine_bot.svg'
+import Portal from '../../images/portal.svg'
 import ScrollContext from '../../context/scrollContext'
 import {
     effects,
@@ -17,36 +20,37 @@ const Work = () => {
 
     const animationStates = useAnimationManager(animatedElements, scrollY)
 
+    const getMovement = (divider, limit) => {
+        return (scrollY / divider) < limit ? (scrollY / divider) : limit
+    }
+
     const boxScrollTransformA = {
-        transform: `translateY(-${scrollY / 10}px)`,
+        transform: `translateY(${getMovement(20, 80)}px)`,
         transition: 'transform 0.5s ease',
     }
 
     const boxScrollTransformB = {
-        transform: `translateY(-${scrollY / 12}px)`,
-        transition: 'transform 0.5s ease',
-    }
-
-    const boxScrollTransformC = {
-        transform: `translateY(-${scrollY / 5}px)`,
-        transition: 'transform 0.5s ease',
-    }
-    const boxScrollTransformD = {
-        transform: `translateY(-${scrollY / 15}px)`,
+        transform: `translateY(${getMovement(10, 200)}px)`,
         transition: 'transform 0.5s ease',
     }
 
     return (
         <section id="work" className={workStyles.workContainer}>
+            <div className={workStyles.svgBox}>
+                <MachineBot
+                    className={workStyles.svgBot}
+                    style={boxScrollTransformB}
+                />
+                <MachineTop
+                    className={workStyles.svgTop}
+                    style={boxScrollTransformA}
+                />
+                <Portal
+                    className={workStyles.svgPortal}
+                    style={boxScrollTransformB}
+                />
+            </div>
             <div className={workStyles.workContentBox}>
-                <div
-                    className={workStyles.decorationBoxMedium}
-                    style={boxScrollTransformD}
-                />
-                <div
-                    className={workStyles.decorationBoxLittle}
-                    style={boxScrollTransformC}
-                />
                 <div
                     className={
                         animationStates.runHeaderAnimation
@@ -55,33 +59,9 @@ const Work = () => {
                     }
                     id="work-section-animated-text"
                 >
-                    <div
-                        className={workStyles.decorationBoxLarge}
-                        style={boxScrollTransformA}
-                    />
-                    <div
-                        className={workStyles.decorationBoxSmall}
-                        style={boxScrollTransformB}
-                    />
-                    <div
-                        className={workStyles.decorationBoxTiny}
-                        style={boxScrollTransformC}
-                    />
-                    <div
-                        className={workStyles.decorationBoxMiny}
-                        style={boxScrollTransformC}
-                    />
                     <h1>The things</h1>
                     <h1>we could</h1>
                     <h1>create..!?</h1>
-                    <div className={workStyles.description}>
-                        <p>
-                            How many developers does it take to change a light
-                            bulb?
-                        </p>
-                        <strong>front-end + back-end + dev-ops = 3?</strong>
-                        <p>Think again.</p>
-                    </div>
                 </div>
             </div>
         </section>

@@ -1,4 +1,6 @@
-require('dotenv').config()
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
     siteMetadata: {
@@ -6,7 +8,7 @@ module.exports = {
         description: 'Developer site of Richard Lenkovits.',
         author: '@rlenkov',
         mapsKey: process.env.GOOGLE_API_TOKEN,
-        cvLink: 'https://drive.google.com/file/d/148o4h2LzgPBMCI6dTr4OzL3dp8pstwxA/view?usp=sharing'
+        cvLink: 'https://drive.google.com/file/d/148o4h2LzgPBMCI6dTr4OzL3dp8pstwxA/view?usp=sharing',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -26,13 +28,6 @@ module.exports = {
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                name: 'images',
-                path: `${__dirname}/src/images`,
-            },
-        },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
                 name: 'content',
                 path: `${__dirname}/content/`,
             },
@@ -41,7 +36,7 @@ module.exports = {
             resolve: 'gatsby-plugin-react-svg',
             options: {
                 rule: {
-                    include: `${__dirname}/src/assets`,
+                    include: `${__dirname}/src/images`,
                 },
             },
         },
@@ -58,9 +53,7 @@ module.exports = {
         {
             resolve: 'gatsby-transformer-remark',
             options: {
-                plugins: [
-                    'gatsby-remark-copy-linked-files',
-                ],
+                plugins: ['gatsby-remark-copy-linked-files'],
             },
         },
         {
@@ -72,7 +65,7 @@ module.exports = {
                 background_color: '#17181D',
                 theme_color: '#17181D',
                 display: 'minimal-ui',
-                icon: 'src/images/logo_rilenk.svg', // this is temporary.
+                icon: 'src/images/logo_rilenk.svg',
             },
         },
     ],

@@ -1,0 +1,489 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: https://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:krita="http://krita.org/namespaces/svg/krita"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" width="1097.28pt" height="1457.28pt"
+  viewBox="0 0 1097.28 1457.28">
+  <defs>
+    <linearGradient id="gradient0" gradientUnits="objectBoundingBox" x1="0.267615291429348" y1="0.282842395369362"
+      x2="0.647377498351918" y2="0.530895539387399" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0.541000008583069" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient1" gradientUnits="objectBoundingBox" x1="0.50842509412859" y1="0.515457697894198"
+      x2="1.05605266615957" y2="-0.114745817498731" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0" stop-opacity="1" />
+      <stop stop-color="#8843de" offset="0.551912546157837" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient2" gradientUnits="objectBoundingBox" x1="0.239909785682845" y1="0.243621203391871"
+      x2="0.690709053107874" y2="0.279503118717263" spreadMethod="pad">
+      <stop stop-color="#8443de" offset="0" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient3" gradientUnits="objectBoundingBox" x1="0.766821973469579" y1="0.772602749595404"
+      x2="0.365385186103532" y2="0.380215816673611" spreadMethod="pad">
+      <stop stop-color="#fafa00" offset="0" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient4" gradientUnits="objectBoundingBox" x1="1.10250126030032" y1="1.03870556347887"
+      x2="0.169837088747475" y2="0.429941059355441" spreadMethod="pad">
+      <stop stop-color="#fafa00" offset="0" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient5" gradientUnits="objectBoundingBox" x1="0.233463109641908" y1="0.855932111083692"
+      x2="1.21011679867772" y2="-0.46610153680672" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0" stop-opacity="1" />
+      <stop stop-color="#8843de" offset="0.551912546157837" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient6" gradientUnits="objectBoundingBox" x1="0.122797128376251" y1="1.21888022563963"
+      x2="0.68891394144683" y2="0.114488724962662" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient7" gradientUnits="objectBoundingBox" x1="-0.257083302165912" y1="1.33785956525619"
+      x2="0.663384434265661" y2="0.12574461415238" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient8" gradientUnits="objectBoundingBox" x1="0.0564562812171729" y1="1.35788076758032"
+      x2="0.78549052841512" y2="0.126377209150911" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient9" gradientUnits="objectBoundingBox" x1="-0.13545077952473" y1="2.00278542319005"
+      x2="0.583442099627876" y2="0.299136339555752" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0.836099982261658" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient10" gradientUnits="objectBoundingBox" x1="0.375625599038228" y1="0.885106983711568"
+      x2="1.23326560999535" y2="-0.701113740106139" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0" stop-opacity="1" />
+      <stop stop-color="#8843de" offset="0.551912546157837" stop-opacity="1" />
+      <stop stop-color="#e43beb" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient11" gradientUnits="objectBoundingBox" x1="0.295719849526959" y1="0.601694925771454"
+      x2="1.01556420260668" y2="0.237288122261535" spreadMethod="pad">
+      <stop stop-color="#583df5" offset="0" stop-opacity="1" />
+      <stop stop-color="#c54bfa" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient12" gradientUnits="objectBoundingBox" x1="0.322984834176253" y1="0.863026038126019"
+      x2="0.937431454450941" y2="0.478627777085691" spreadMethod="pad">
+      <stop stop-color="#f5a76e" offset="0.592899978160858" stop-opacity="1" />
+      <stop stop-color="#fafa00" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient13" gradientUnits="objectBoundingBox" x1="-0.219212761289142" y1="0.372692805051835"
+      x2="0.451966863534664" y2="0.309421966330216" spreadMethod="pad">
+      <stop stop-color="#f5a76e" offset="0.592899978160858" stop-opacity="1" />
+      <stop stop-color="#fafa00" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient14" gradientUnits="objectBoundingBox" x1="-0.100057796183956" y1="1.06804010753824"
+      x2="0.555310659496925" y2="0.725781256548797" spreadMethod="pad">
+      <stop stop-color="#f5a76e" offset="0.592899978160858" stop-opacity="1" />
+      <stop stop-color="#fafa00" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient15" gradientUnits="objectBoundingBox" x1="-0.557988627906592" y1="0.686439050358188"
+      x2="0.564071384447974" y2="0.329401850803924" spreadMethod="pad">
+      <stop stop-color="#f5a76e" offset="0.592899978160858" stop-opacity="1" />
+      <stop stop-color="#fafa00" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient16" gradientUnits="objectBoundingBox" x1="0.813164381391792" y1="0.0183712429560403"
+      x2="-0.0155355757951812" y2="0.459360591669421" spreadMethod="pad">
+      <stop stop-color="#fafa00" offset="0" stop-opacity="1" />
+      <stop stop-color="#f5a76e" offset="1" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="gradient17" gradientUnits="objectBoundingBox" x1="-0.396325787290811" y1="0.932729016531018"
+      x2="0.901252029726636" y2="0.67396863013011" spreadMethod="pad">
+      <stop stop-color="#f5a76e" offset="0.592899978160858" stop-opacity="1" />
+      <stop stop-color="#fafa00" offset="1" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+  <path id="shape0" transform="matrix(0.999999817218191 0 0 0.999999817218191 31.8800003741175 290.47679135446)"
+    fill="none" stroke="#080b14" stroke-width="1.6992" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0.0864L0 0Z" sodipodi:nodetypes="ccc" />
+  <path id="shape1" transform="matrix(0.999999817218191 0 0 0.999999817218191 32.1831274504194 28.0800222708917)"
+    fill="url(#gradient0)" fill-rule="evenodd" stroke="#000000" stroke-width="1.6992" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M0 258.905C57.7018 118.352 107.433 57.2597 158.437 3.78C162.282 1.46204 165.882 0.202044 169.237 0C173.597 0.938566 178.752 2.28208 184.702 4.03055C282.64 31.3544 373.513 87.8723 457.321 173.584C457.418 178.317 457.663 180.365 454.897 185.04C416.288 269.859 347.441 345.025 273.097 417.082C185.211 420.689 111.187 399.214 43.3929 366.466C25.0011 332.358 6.47853 298.308 0 258.905Z"
+    sodipodi:nodetypes="ccccccccc" />
+  <path id="shape2" transform="matrix(0.999999817218191 0 0 0.999999817218191 74.6239937475047 96.3865599264624)"
+    fill="url(#gradient1)" fill-rule="evenodd" stroke="#000000" stroke-width="1.6992" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M0 297.871C27.1244 216.841 101.056 91.9686 184.652 7.86945C189.924 4.67855 195.067 1.23136 201.319 0C310.043 12.0808 357.374 59.7014 415.339 104.814L414.992 112.255C371.821 205.223 302.125 277.855 230.684 349.149C166.236 348.876 99.3393 345.294 0 297.871Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape01" transform="matrix(0.999999856954614 0 0 0.999999856954614 249.119952494101 490.679929082163)"
+    fill="none" stroke="#9c56f5" stroke-width="14.4" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0"
+    sodipodi:nodetypes="c" />
+  <path id="shape11" transform="matrix(0.999999856954614 0 0 0.999999856954614 195.479982644879 28.552523952936)"
+    fill="url(#gradient2)" fill-rule="evenodd" stroke-opacity="0" stroke="#000000" stroke-width="0"
+    stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 1.5075L70.9803 69.9978L79.2535 66.7522C162.692 72.1897 226.181 111.291 294.48 173.048C236.907 123.575 168.137 45.4359 6.48 0Z"
+    sodipodi:nodetypes="cccccc" />
+  <path id="shape3"
+    transform="matrix(0.988610071806184 -0.150498637311494 0.150498637311494 0.988610071806184 59.2549287415464 244.5249335891)"
+    fill="url(#gradient3)" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M4.46397 59.8212L0 50.3105C9.71753 31.4546 22.2129 14.4929 38.3285 0L42.6385 8.27021C26.8338 23.6266 14.803 41.2221 4.46397 59.8212"
+    sodipodi:nodetypes="ccccc">
+    <animateTransform id="eyex1" attributeName="transform" type="skewY" from="1" to="10" begin="2s;eyex1.end+2.2s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="eyex1" attributeName="transform" type="skewY" from="10" to="1" begin="2.2s;eyex1.end+2.4s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="eyey1" attributeName="transform" type="skewX" from="1" to="10" begin="2s;eyey1.end+2.2s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="eyey1" attributeName="transform" type="skewX" from="10" to="1" begin="2.2s;eyey1.end+2.4s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+  </path>
+  <path id="shape31"
+    transform="matrix(0.99687760749873 0.0789607187245978 -0.0789607187245978 0.99687760749873 163.521971913421 94.0721239856869)"
+    fill="url(#gradient4)" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M4.46397 59.8212L0 50.3105C9.71753 31.4546 22.2129 14.4929 38.3285 0L42.6385 8.27021C26.8338 23.6266 14.803 41.2221 4.46397 59.8212"
+    sodipodi:nodetypes="ccccc">
+    <animateTransform id="eyex2" attributeName="transform" type="skewY" from="1" to="10" begin="2s;eyex2.end+2.2s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="eyex2" attributeName="transform" type="skewY" from="10" to="1" begin="2.2s;eyex2.end+2.4s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="eyey2" attributeName="transform" type="skewX" from="1" to="10" begin="2s;eyey2.end+2.2s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+    <animateTransform id="eyey2" attributeName="transform" type="skewX" from="10" to="1" begin="2.2s;eyey2.end+2.4s"
+      dur="0.2s" additive="sum" fill="remove" repeatCount="1" />
+  </path>
+  <path id="shape01" transform="matrix(0.999999870443149 0 0 0.999999870443149 180.228638652635 260.449466057999)"
+    fill="url(#gradient5)" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 46.3296L29.2742 0L65.4215 14.7644L35.6382 60.0758Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape11" transform="matrix(0.999999870443149 0 0 0.999999870443149 208.993743118421 234.993629465534)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M5.60029 25.965L17.5645 7.12764L0 0" sodipodi:nodetypes="ccc" />
+  <path id="shape21" transform="matrix(0.999999870443149 0 0 0.999999870443149 215.463144996798 220.334683051282)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M7.63675 43.7841L28.5105 12.2188L0 0" sodipodi:nodetypes="ccc" />
+  <path id="shape31" transform="matrix(0.999999870443149 0 0 0.999999870443149 232.158558716365 184.845622072183)"
+    fill="#f6fdff" fill-rule="evenodd" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 83.4952L54.4755 0" sodipodi:nodetypes="cc" />
+  <path id="shape4" transform="matrix(0.999999870443149 0 0 0.999999870443149 241.068103177112 256.121977758164)"
+    fill="#3c2f84" fill-rule="evenodd" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 15.2735L9.67322 0" sodipodi:nodetypes="cc" />
+  <path id="shape5" transform="matrix(0.999999870443149 0 0 0.999999870443149 169.379984886617 236.880010174508)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M36.9 26.46L0 10.98L0 10.98L6.66 0" sodipodi:nodetypes="cccc" />
+  <path id="shape6" transform="matrix(0.999999870443149 0 0 0.999999870443149 176.536308890199 255.038170820521)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M20.88 21.78L0 13.5L8.64 0" sodipodi:nodetypes="ccc" />
+  <path id="shape7" transform="matrix(0.999999870443149 0 0 0.999999870443149 158.843589762901 263.032728517985)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M29.7 28.08L0 16.56L11.16 0" sodipodi:nodetypes="ccc" />
+  <path id="shape8" transform="matrix(0.999999870443149 0 0 0.999999870443149 145.079987072074 281.160006012059)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M36 21.96L13.5 12.78L17.28 6.84L0 0" sodipodi:nodetypes="cccc" />
+  <path id="shape9" transform="matrix(0.999999870443149 0 0 0.999999870443149 136.979993455131 294.660014756169)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M50.76 15.84L42.84 32.4L0 16.38L10.8 0" sodipodi:nodetypes="cccc" />
+  <path id="shape10" transform="matrix(0.999999870443149 0 0 0.999999870443149 179.639978610326 256.140001821043)"
+    fill="#ffd100" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0.27 50.49L0 43.74L29.43 0L29.88 4.86Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape111" transform="matrix(0.999999870443149 0 0 0.999999870443149 209.159975094412 256.140001821043)"
+    fill="#ffd100" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0.18 0L36 14.76L36.36 19.8L0 5.04Z" sodipodi:nodetypes="ccccc" />
+  <ellipse id="shape12" transform="matrix(0.999999870443149 0 0 0.999999870443149 143.459981091804 288.359994948035)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffcc00"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape011" transform="matrix(0.999999867049668 0 0 0.999999867049668 138.364003609185 275.848021778543)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape02" transform="matrix(0.999999823743507 0 0 0.999999823743507 172.328016611622 228.956042576361)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape03" transform="matrix(0.999999823743507 0 0 0.999999823743507 202.388014381941 230.216042482902)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape04" transform="matrix(0.999999823743507 0 0 0.999999823743507 207.968013968049 213.836043697877)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape13" transform="matrix(0.999999870443149 0 0 0.999999870443149 115.199992178722 282.060010422499)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M41.94 36.18L32.22 51.48L0 40.14L27 0" sodipodi:nodetypes="cccc" />
+  <path id="shape14" transform="matrix(0.999999870443149 0 0 0.999999870443149 151.379980547766 330.83999027693)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L21.96 8.64"
+    sodipodi:nodetypes="cc" />
+  <path id="shape15" transform="matrix(0.999999870443149 0 0 0.999999870443149 165.7799787162 317.339991994023)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M37.62 0L9.54 42.84L0 39.06" sodipodi:nodetypes="ccc" />
+  <ellipse id="shape05" transform="matrix(0.999999823743507 0 0 0.999999823743507 168.320328079992 334.4588908457)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape06" transform="matrix(0.999999800230908 0 0 0.999999800230908 161.976497772748 350.521222332512)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape16" transform="matrix(0.999999870443149 0 0 0.999999870443149 96.5699907484664 335.789998456906)"
+    fill="url(#gradient6)" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M59.3483 13.7549L20.79 0L0 34.29L43.38 48.87L62.19 14.76Z" sodipodi:nodetypes="cccccc" />
+  <path id="shape17" transform="matrix(0.999999870443149 0 0 0.999999870443149 96.2999910861198 331.379999741766)"
+    fill="#ffd100" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 38.79L0.179481 32.4L20.9993 0L60.9339 14.49L62.28 19.53L20.9993 4.77Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape07"
+    transform="matrix(0.997554680833802 0.0698883384139487 -0.0698883384139487 0.997554680833802 272.888539267063 124.713254358816)"
+    fill="url(#gradient7)" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M34.7754 7.11716L12.182 0L0 17.7426L25.4187 25.2867L36.4406 7.63723Z" sodipodi:nodetypes="cccccc" />
+  <path id="shape08"
+    transform="matrix(0.997992742333297 0.0633261979733183 -0.0633261979733183 0.997992742333297 273.397384440779 122.906481920195)"
+    fill="#f6fdff" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 20.1046L0.104421 16.7927L12.2173 0L35.451 7.51009L36.2342 10.1223L12.2173 2.47226Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape09"
+    transform="matrix(0.99755466866311 0.0698883375612742 -0.0698883375612742 0.99755466866311 285.211145854531 208.633531071183)"
+    fill="url(#gradient8)" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M50.9584 10.4292L17.851 0L0 25.9992L37.2475 37.054L53.3985 11.1913Z" sodipodi:nodetypes="cccccc" />
+  <path id="shape010"
+    transform="matrix(0.997992715043833 0.0633261962417046 -0.0633261962417046 0.997992715043833 285.118590518248 204.760103545204)"
+    fill="#ffd500" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 29.3028L0.154469 24.4756L18.0729 0L52.4423 10.9461L53.6008 14.7534L18.0729 3.60336Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape011"
+    transform="matrix(0.99755466866311 0.0698883375612742 -0.0698883375612742 0.99755466866311 433.311754447153 186.113880658309)"
+    fill="url(#gradient9)" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M29.2874 5.99398L10.2595 0L0 14.9425L21.4073 21.2961L30.6898 6.43198Z" sodipodi:nodetypes="cccccc" />
+  <path id="shape012"
+    transform="matrix(0.997992695685352 0.0633261950133405 -0.0633261950133405 0.997992695685352 433.202160370925 183.973190795439)"
+    fill="#f6fdff" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 16.6744L0.0899394 13.9275L10.5229 0L30.5345 6.22874L31.209 8.39523L10.5229 2.05045Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape013"
+    transform="matrix(0.997554633971629 0.0698883351308008 -0.0698883351308008 0.997554633971629 180.315427659671 352.631101498484)"
+    fill="url(#gradient10)" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M29.2874 5.99398L10.2595 0L0 14.9425L21.4073 21.2961L30.6898 6.43198Z" sodipodi:nodetypes="cccccc" />
+  <path id="shape014"
+    transform="matrix(0.997992691425273 0.0633261947430228 -0.0633261947430228 0.997992691425273 179.301585063387 350.695285951301)"
+    fill="#ffd500" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 16.6744L0.0914592 13.9275L10.7007 0L31.0505 6.22874L31.7364 8.39523L10.7007 2.05045Z"
+    sodipodi:nodetypes="ccccccc" />
+  <path id="shape18" transform="matrix(0.999999870443149 0 0 0.999999870443149 164.024983276684 372.239984139423)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M23.3313 0L9.96697 21.9799L0 18.495" sodipodi:nodetypes="ccc" />
+  <path id="shape19" transform="matrix(0.999999870443149 0 0 0.999999870443149 99.7199880035137 387.539985785192)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L105.21 34.92" sodipodi:nodetypes="cc" />
+  <path id="shape20" transform="matrix(0.999999870443149 0 0 0.999999870443149 162.269983938727 402.47999132696)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 4.77L2.43 0"
+    sodipodi:nodetypes="cc" />
+  <path id="shape21" transform="matrix(0.999999870443149 0 0 0.999999870443149 152.099983071461 366.569991086366)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L19.98 6.66L16.29 13.32" sodipodi:nodetypes="ccc" />
+  <path id="shape22" transform="matrix(0.999999870443149 0 0 0.999999870443149 193.679978955454 321.029997018091)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 30.33L18.54 0"
+    sodipodi:nodetypes="cc" />
+  <path id="shape23" transform="matrix(0.999999870443149 0 0 0.999999870443149 205.559981894128 422.819993543042)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L28.62 9.36"
+    sodipodi:nodetypes="cc" />
+  <path id="shape24" transform="matrix(0.999999870443149 0 0 0.999999870443149 209.184654887358 318.106957661671)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M9.73687 0L27.0468 6.6185L9.92778 33.3471L0 29.5288L9.92778 15.2735" sodipodi:nodetypes="ccccc" />
+  <path id="shape25" transform="matrix(0.999999870443149 0 0 0.999999870443149 203.011621948072 396.256386853055)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 24.8194L14.6371 0" sodipodi:nodetypes="cc" />
+  <path id="shape26" transform="matrix(0.999999870443149 0 0 0.999999870443149 206.193602134082 370.800545364963)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L22.6557 7.89131" sodipodi:nodetypes="cc" />
+  <path id="shape27" transform="matrix(0.999999870443149 0 0 0.999999870443149 222.358053638059 305.633581589078)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M5.47301 0L35.5109 11.4551L4.32749 57.4029L0 55.621L31.9471 67.3944" sodipodi:nodetypes="ccccc" />
+  <path id="shape28" transform="matrix(0.999999870443149 0 0 0.999999870443149 222.358045797098 373.60066449043)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M32.838 0L0 54.6028" sodipodi:nodetypes="cc" />
+  <path id="shape29" transform="matrix(0.999999870443149 0 0 0.999999870443149 221.212533002698 411.78442430376)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L25.074 8.40043L16.8009 21.5102L16.8009 21.5102L27.7469 25.4558" sodipodi:nodetypes="ccccc" />
+  <path id="shape30" transform="matrix(0.999999870443149 0 0 0.999999870443149 249.086687054863 356.672543058346)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M6.87308 14.8917L13.1098 4.77297L0 0" sodipodi:nodetypes="ccc" />
+  <path id="shape311" transform="matrix(0.999999870443149 0 0 0.999999870443149 241.919967924312 397.979980102145)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 0L12.6 4.05"
+    sodipodi:nodetypes="cc" />
+  <path id="shape32" transform="matrix(0.999999870443149 0 0 0.999999870443149 250.379966813191 382.589982123439)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L41.94 15.12L41.4 15.12L32.58 27.99" sodipodi:nodetypes="cccc" />
+  <path id="shape33" transform="matrix(0.999999870443149 0 0 0.999999870443149 246.59996730965 393.389980704988)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M27.9 0L14.4 22.41L0 17.64" sodipodi:nodetypes="ccc" />
+  <ellipse id="shape015" transform="matrix(0.999999810223644 0 0 0.999999810223644 158.624547471127 384.267273975429)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape016" transform="matrix(0.999999785438429 0 0 0.999999785438429 91.4285692648089 381.565296078762)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape017" transform="matrix(0.999999766816906 0 0 0.999999766816906 213.592582154016 389.213316813424)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape018" transform="matrix(0.999999752072857 0 0 0.999999752072857 225.05660407102 374.361334393044)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape019" transform="matrix(0.999999749271549 0 0 0.999999749271549 215.640626325402 405.589361568891)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape020" transform="matrix(0.999999718000373 0 0 0.999999718000373 231.964643877327 428.230090692513)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape021" transform="matrix(0.999999745962871 0 0 0.999999745962871 240.368674071301 403.838126389051)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape022" transform="matrix(0.99999970097529 0 0 0.99999970097529 252.192683679113 398.706145446939)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape023" transform="matrix(0.999999698576027 0 0 0.999999698576027 275.716710672891 408.694166124212)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape024" transform="matrix(0.999999680427098 0 0 0.999999680427098 241.82073010917 350.102184487222)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape025" transform="matrix(0.999999650591902 0 0 0.999999650591902 214.764745918976 326.917483684445)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape026" transform="matrix(0.999999677322795 0 0 0.999999677322795 214.528774600565 355.085515237236)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape34" transform="matrix(0.999999870443149 0 0 0.999999870443149 163.529979109471 378.449984434012)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M5.31 0L0 10.71"
+    sodipodi:nodetypes="cc" />
+  <path id="shape35" transform="matrix(0.999999870443149 0 0 0.999999870443149 157.589979861621 391.589982770163)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M6.93 10.62L0 8.19L4.23 0" sodipodi:nodetypes="ccc" />
+  <path id="shape36" transform="matrix(0.999999870443149 0 0 0.999999870443149 229.485693309124 194.264281810341)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M2.67285 32.9653L12.2188 19.0852L2.29103 15.1194L9.29138 3.84182L0 0" sodipodi:nodetypes="ccccc" />
+  <ellipse id="shape027" transform="matrix(0.999999797368466 0 0 0.999999797368466 220.868930502385 187.424400622713)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape37" transform="matrix(0.999999870443149 0 0 0.999999870443149 238.679978131472 288.720005021105)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L106.92 41.94" sodipodi:nodetypes="cc" />
+  <path id="shape38" transform="matrix(0.999999870443149 0 0 0.999999870443149 266.269391108123 318.488794415128)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 69.4945L43.2749 0" sodipodi:nodetypes="cc" />
+  <path id="shape39" transform="matrix(0.999999870443149 0 0 0.999999870443149 260.669105921908 307.797340877808)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M27.7469 44.8023L0 35.3836L22.4011 0" sodipodi:nodetypes="ccc" />
+  <ellipse id="shape028" transform="matrix(0.999999748970996 0 0 0.999999748970996 248.788781780547 247.308059152588)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape40" transform="matrix(0.999999870443149 0 0 0.999999870443149 287.639984099823 126.360024479855)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 57.42L38.16 0"
+    sodipodi:nodetypes="cc" />
+  <path id="shape41" transform="matrix(0.999999870443149 0 0 0.999999870443149 243.899986743394 145.980023294055)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M46.98 31.5L0 10.26L6.66 0L17.82 4.86" sodipodi:nodetypes="cccc" />
+  <path id="shape42" transform="matrix(0.999999870443149 0 0 0.999999870443149 239.939986982731 162.540022293197)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M10.62 0L0 17.1L17.1 24.66L9.72 36" sodipodi:nodetypes="cccc" />
+  <path id="shape43" transform="matrix(0.999999870443149 0 0 0.999999870443149 285.929969421443 165.960011801572)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M10.53 47.34L0 42.48L29.25 0L67.41 17.28" sodipodi:nodetypes="cccc" />
+  <path id="shape44" transform="matrix(0.999999870443149 0 0 0.999999870443149 298.259962967933 192.600008503947)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L20.52 8.82001L25.56 1.08001" sodipodi:nodetypes="ccc" />
+  <ellipse id="shape029" transform="matrix(0.999999748970996 0 0 0.999999748970996 242.772938782452 196.152416371751)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape030" transform="matrix(0.999999734104265 0 0 0.999999734104265 321.477199600134 184.505166394509)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape031" transform="matrix(0.999999694537175 0 0 0.999999694537175 259.02881445431 146.765679284483)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <ellipse id="shape032" transform="matrix(0.999999703982536 0 0 0.999999703982536 321.823189362584 118.06301771025)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape45" transform="matrix(0.999999870443149 0 0 0.999999870443149 303.434899962574 144.243548992805)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L7.96508 3.53647" sodipodi:nodetypes="cc" />
+  <path id="shape033" transform="matrix(0.99999982822355 0 0 0.99999982822355 343.293665363405 161.930255809389)"
+    fill="url(#gradient11)" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0 46.3296L29.2742 0L65.4215 14.7644L35.6382 60.0758Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape034" transform="matrix(0.999999885971087 0 0 0.999999885971087 342.969228478893 157.55318870276)"
+    fill="#ffcc00" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0.27 50.49L0 43.74L29.43 0L29.88 4.86Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape035" transform="matrix(0.999999883914707 0 0 0.999999883914707 372.500828861107 157.793449525702)"
+    fill="#ffcc00" fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel" d="M0.18 0L36 14.76L36.36 19.8L0 5.04Z" sodipodi:nodetypes="ccccc" />
+  <path id="shape46" transform="matrix(0.999999870443149 0 0 0.999999870443149 304.962268460267 216.180017773142)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M55.3977 0L0 89.0717" sodipodi:nodetypes="cc" />
+  <path id="shape47" transform="matrix(0.999999870443149 0 0 0.999999870443149 324.181411370664 244.794118911464)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L14.2553 5.72756" sodipodi:nodetypes="cc" />
+  <path id="shape48" transform="matrix(0.999999870443149 0 0 0.999999870443149 332.327274610375 212.580011393297)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M18.4927 0L5.09117 22.7954L0 20.6317" sodipodi:nodetypes="ccc" />
+  <ellipse id="shape036" transform="matrix(0.999999694537175 0 0 0.999999694537175 346.596906703319 226.060623756206)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape49" transform="matrix(0.999999870443149 0 0 0.999999870443149 349.649967183405 222.011149860941)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M10.0424 0L19.44 4.42886L23.4 6.04886L9 28.9989L0 43.1289" sodipodi:nodetypes="ccccc" />
+  <ellipse id="shape037" transform="matrix(0.999999670314164 0 0 0.999999670314164 351.861062338107 248.396922236243)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape50" transform="matrix(0.999999870443149 0 0 0.999999870443149 349.255435701546 266.686156773128)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L46.4569 19.9828" sodipodi:nodetypes="cc" />
+  <path id="shape51" transform="matrix(0.999999870443149 0 0 0.999999870443149 325.979965678781 146.250016736326)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M34.02 30.51L0 15.39L11.07 0" sodipodi:nodetypes="ccc" />
+  <path id="shape52" transform="matrix(0.999999870443149 0 0 0.999999870443149 331.818179335446 126.169908478214)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M34.2381 40.093L16.5463 31.8198L28.3833 13.6189L0 0" sodipodi:nodetypes="cccc" />
+  <path id="shape53" transform="matrix(0.999999870443149 0 0 0.999999870443149 381.959967216864 149.580019067219)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 10.8L6.84 0L52.38 21.78L34.38 48.6" sodipodi:nodetypes="cccc" />
+  <path id="shape54" transform="matrix(0.999999870443149 0 0 0.999999870443149 397.799965824484 158.220018307739)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel" d="M0 10.62L7.38 0"
+    sodipodi:nodetypes="cc" />
+  <ellipse id="shape038" transform="matrix(0.999999678386828 0 0 0.999999678386828 335.447210176187 136.87103537425)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape55" transform="matrix(0.999999870443149 0 0 0.999999870443149 444.239970376193 204.480017935931)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M14.58 0L24.84 4.68L0 44.46" sodipodi:nodetypes="ccc" />
+  <path id="shape56" transform="matrix(0.999999870443149 0 0 0.999999870443149 359.946865838793 255.867408677826)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M0 0L45.3114 19.3464" sodipodi:nodetypes="cc" />
+  <path id="shape57" transform="matrix(0.999999870443149 0 0 0.999999870443149 375.659969819306 212.760014582468)"
+    fill="none" stroke="#ffcc00" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="bevel"
+    d="M11.88 0L37.71 11.7L21.51 37.98L12.78 34.47L8.46 41.31L0 37.62L10.8 20.16" sodipodi:nodetypes="ccccccc" />
+  <ellipse id="shape040" transform="matrix(0.999999722698882 0 0 0.999999722698882 383.777105499315 224.781636698116)"
+    rx="5.03999999999999" ry="5.40000000000001" cx="5.03999999999999" cy="5.40000000000001" fill="#ffd900"
+    fill-rule="evenodd" stroke="#ffcc00" stroke-width="1.44" stroke-linecap="square" stroke-linejoin="bevel" />
+  <path id="shape12" transform="matrix(0.999999853368596 0 0 0.999999853368596 172.995791405898 360.684029251685)"
+    fill="url(#gradient12)" fill-rule="evenodd" stroke="#0c0b0b" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M15.0642 4.00841C-11.8864 230.533 2.38461 323.767 18.688 329.715C34.9913 335.663 54.2026 281.441 67.8442 171.036L58.8442 169.596C47.8644 265.874 24.697 304.024 19.7062 304.768C14.7154 305.511 5.095 255.968 13.0803 138.128L27.5376 6.04488C24.2879 0.746425 20.5405 -3.39061 15.0642 4.00841Z"
+    sodipodi:nodetypes="czcczccc" />
+  <path id="shape22" transform="matrix(0.999999853368596 0 0 0.999999853368596 264.7542318249 220.525919510738)"
+    fill="url(#gradient13)" fill-rule="evenodd" stroke="#0c0b0b" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M33.3257 2.6741C-9.87427 45.1541 -11.0743 94.8341 29.7257 151.714C70.5257 208.594 92.8458 219.874 113.246 169.714L47.0811 112.473C5.36265 71.126 46.6629 28.8409 59.6057 14.1941C54.6535 -2.09163 50.9654 -1.90083 33.3257 2.6741Z"
+    sodipodi:nodetypes="czcccc" />
+  <path id="shape32" transform="matrix(0.999999853368596 0 0 0.999999853368596 266.009677287637 133.89441802268)"
+    fill="url(#gradient14)" fill-rule="evenodd" stroke="#0c0b0b" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M16.8604 2.99561C-34.7396 122.276 36.8865 229.875 166.487 204.195C296.087 178.515 265.852 159.205 128.812 181.285C22.2519 182.725 -17.1297 99.266 27.7504 10.4656C35.4432 -3.11832 20.5079 -0.950106 16.8604 2.99561Z"
+    sodipodi:nodetypes="czccc" />
+  <path id="shape41" transform="matrix(0.999999853368596 0 0 0.999999853368596 406.43157853478 196.0244734718)"
+    fill="url(#gradient15)" fill-rule="evenodd" stroke="#0c0b0b" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M1.41129 4.49555C-7.32604 29.4556 27.2263 110.216 30.6084 120.776C33.9906 131.336 35.3333 125.576 40.6884 120.056C35.6151 87.6556 4.65258 12.6555 16.2084 4.49555C15.5999 -0.487362 7.57088 -2.43137 1.41129 4.49555Z"
+    sodipodi:nodetypes="czccc" />
+  <path id="shape02" transform="matrix(0.999999932841446 0 0 0.999999932841446 137.382878234455 256.046382981025)"
+    fill="url(#gradient16)" fill-rule="evenodd" stroke="#1a1a1a" stroke-width="1.98" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M28.2392 2.58628C-5.55937 174.604 -9.01865 265.412 17.8614 275.012C44.7414 284.612 92.5934 304.633 131.177 267.394L141.257 241.474C84.7939 293.743 20.1419 283.082 13.5414 245.492C6.94081 207.902 14.9601 128.133 37.5992 6.18628C36.9357 -0.604527 33.8157 -1.80453 28.2392 2.58628Z"
+    sodipodi:nodetypes="czcczcc" />
+  <path id="shape012"
+    transform="matrix(0.999593665618597 -0.0284993051211618 0.0284993051211618 0.999593665618597 99.6945473644808 351.684968191793)"
+    fill="url(#gradient17)" fill-rule="evenodd" stroke="#000000" stroke-width="1.44" stroke-linecap="square"
+    stroke-linejoin="bevel"
+    d="M14.3954 5.40133C-7.28245 184.031 -6.21678 282.466 29.5845 283.816C65.3858 285.167 89.1022 247.44 86.1461 188.347L71.3004 186.523C71.3004 233.46 47.9216 251.721 34.092 245.599C20.2624 239.476 9.1879 167.014 40.1322 13.775C43.672 2.70918 27.7975 -6.10327 14.3954 5.40133Z"
+    sodipodi:nodetypes="czcczcc" />
+</svg>

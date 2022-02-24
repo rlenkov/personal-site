@@ -42,12 +42,19 @@ const Hero = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            file(relativePath: { eq: "_assetbox/astro-self-edited-med.jpg" }) {
+            fallbackImage: file(
+                relativePath: { eq: "_assetbox/video_fallback.png" }
+            ) {
                 childImageSharp {
                     fluid(quality: 100) {
                         src
                     }
                 }
+            }
+            videoBackground: file(
+                relativePath: { eq: "_assetbox/profile_video.mp4" }
+            ) {
+                publicURL
             }
         }
     `)
@@ -92,7 +99,7 @@ const Hero = () => {
     }
 
     const backgroundStyle = {
-        backgroundImage: `url('${data.file.childImageSharp.fluid.src}')`,
+        backgroundImage: `url('${data.fallbackImage.childImageSharp.fluid.src}')`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'right',
@@ -105,6 +112,14 @@ const Hero = () => {
             style={backgroundStyle}
         >
             <Welcome runOpen={animationStates.runOpeningAnimation} />
+            <div className={heroStyles.videoContainer}>
+                <video autoPlay muted loop playsInline>
+                    <source
+                        src={data.videoBackground.publicURL}
+                        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+                    />
+                </video>
+            </div>
             <div className={heroStyles.heroContentBox}>
                 <div className={heroStyles.heroTextBox}>
                     <div>

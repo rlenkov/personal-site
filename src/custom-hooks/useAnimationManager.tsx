@@ -41,7 +41,6 @@ export function useAnimationManager(animatedElements: object, yPosition = 0) {
                 animationStates[key] ||
                 animatedElementRefs[key] === undefined
             ) {
-                // console.log(`ommiting, cuz ${key} is ${animationStates[key]}`)
                 return
             }
             let adjustment = window.innerHeight * 2
@@ -55,18 +54,8 @@ export function useAnimationManager(animatedElements: object, yPosition = 0) {
                 adjustment = window.innerHeight * 0.9
             }
             const y = animatedElementRefs[key]
-            // console.log(animatedElements[key])
-            // console.log(y)
-            // console.log(yPosition)
-            // console.log(`adj: ${adjustment}`)
             if (y !== null) {
                 if (yPosition + adjustment >= y) {
-                    // console.log('pivot reached!')
-                    // console.log(animatedElements[key])
-                    // console.log(key)
-                    //     console.log(y)
-                    //     console.log(yPosition)
-                    //     console.log(`adj: ${adjustment}`)
                     const copy = { ...animationStates }
                     copy[key] = true
                     setAnimationStates(copy)

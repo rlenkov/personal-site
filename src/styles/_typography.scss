@@ -62,13 +62,14 @@
 
 @mixin gigantic-decoration-desktop($fill: white, $border: black) {
     font-family: 'Biryani';
-    font-size: 164px;
+    font-size: 100px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.09;
     letter-spacing: normal;
     color: $fill;
+    stroke-width: 1px;
     -webkit-text-fill-color: $fill; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $border;

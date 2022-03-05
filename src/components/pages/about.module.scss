@@ -4,6 +4,41 @@
     position: relative;
     background-color: $new-white;
     overflow: hidden;
+    height: 100vh;
+    max-height: 1000px;
+}
+
+.background-text-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // transform: rotate(-45deg) translateY(-3000px);
+    // overflow: visible;
+}
+
+.floating-box {
+    height: 164px;
+    inline-size: 164px;
+    transform: rotate(-45deg);
+    margin-bottom: 150px;
+}
+
+.overflow-box {
+    inline-size: 20000px;
+    span {
+        margin-right: 30px;
+        @include gigantic-decoration-desktop($new-white, $new-coral);
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+    }
+    span:hover {
+        -webkit-text-stroke-width: 5px;
+        stroke-width: 5px;
+    }
 }
 
 .about-headline {
@@ -24,35 +59,10 @@
     }
 }
 
-.about-content-box {
-    position: relative;
-    z-index: 0;
-    padding: 100px 200px 100px 300px;
-    display: flex;
-    flex-direction: row;
-}
-
-.skill-collections {
-    position: relative;
-    z-index: $over-base-z;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 60%;
-    h4 {
-        @include small-header-desktop;
-    }
-    h3 {
-        @include large-thin-desktop;
-    }
-    a {
-        @include small-header-desktop;
-    }
-    a:hover {
-        color: darken($new-coral, 30%);
-    }
-}
-
 .cv-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     margin-top: 20px;
     a {
         color: $new-coral;
@@ -65,14 +75,6 @@
         background-color: $new-white;
     }
 
-    .skill-collections {
-        h4 {
-            @include small-header-desktop;
-        }
-        h3 {
-            @include large-thin-desktop;
-        }
-    }
     .explainer-popup {
         top: -230px;
     }
@@ -93,14 +95,6 @@
             @include large-topic-desktop;
         }
     }
-
-    .about-content-box {
-        position: relative;
-        z-index: 0;
-        padding: 50px 100px 100px 200px;
-        display: flex;
-        flex-direction: row;
-    }
 }
 
 @include for-phone-only {
@@ -118,30 +112,11 @@
         margin-left: 30px;
         padding-top: 100px;
     }
-
-    .about-content-box {
-        position: relative;
-        z-index: 0;
-        padding: 30px 20px 100px 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    .skill-collections {
-        width: 100%;
-        margin: auto;
-        padding-left: 10px;
-    }
 }
 
 @include for-tiny-phone-only {
     .about-container {
         position: relative;
         background-color: $new-white;
-    }
-    .skill-collections {
-        a {
-            display: inline-block;
-            padding-top: 10px;
-        }
     }
 }

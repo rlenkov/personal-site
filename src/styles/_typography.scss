@@ -106,7 +106,7 @@
 
 @mixin large-topic-desktop {
     font-family: 'Biryani';
-    font-size: 84px;
+    font-size: 74px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -114,10 +114,10 @@
     letter-spacing: normal;
     color: $new-dark-grey;
     @include for-small-desktop {
-        font-size: 54px;
+        font-size: 24px;
     }
     @include for-tablet-only {
-        font-size: 36px;
+        font-size: 24px;
     }
 }
 

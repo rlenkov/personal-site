@@ -1,8 +1,14 @@
 @import '../../styles/custom';
 
+$light-version: $orange-yellow;
+$dark-version: $new-dark-grey;
+
+$dark-hover: $new-white;
+$light-hover: $new-aquamarine;
+
 .menuBox {
     position: fixed;
-    border-right: 2px solid $new-aquamarine;
+    border-right: 2px solid $light-version;
     height: 100vh;
     width: 200px;
     z-index: $header-z;
@@ -19,91 +25,91 @@
     right: 0px;
     width: 40px;
     height: 2px;
-    border: 2px solid $new-aquamarine;
-    background-color: $new-aquamarine;
+    border: 2px solid $light-version;
+    background-color: $light-version;
     cursor: pointer;
     span {
         display: inline-block;
         width: 60px;
         position: absolute;
         @include tiny-header-desktop;
-        color: $new-aquamarine;
+        color: $light-version;
         right: -80px;
         top: -2px;
     }
     &:hover {
-        border-color: $new-white;
+        border-color: $dark-hover;
         span {
-            color: $new-white;
+            color: $dark-hover;
         }
     }
     &:active {
-        border-color: $new-aquamarine;
+        border-color: $light-version;
         span {
-            color: $new-aquamarine;
+            color: $light-version;
         }
     }
 }
 
 .click-stick {
     position: absolute;
-    background-color: $new-aquamarine;
+    background-color: $light-version;
     right: 0px;
     width: 20px;
     height: 1px;
-    border: 1px solid $new-aquamarine;
+    border: 1px solid $light-version;
     cursor: pointer;
     span {
         display: inline-block;
         width: 60px;
         position: absolute;
         @include tiny-header-desktop;
-        color: $new-aquamarine;
+        color: $light-version;
         right: -80px;
         top: -2px;
     }
     &:hover {
-        border-color: $new-white;
+        border-color: $dark-hover;
         span {
-            color: $new-white;
+            color: $dark-hover;
         }
     }
     &:active {
-        border-color: $new-aquamarine;
+        border-color: $light-version;
         span {
-            color: $new-aquamarine;
+            color: $light-version;
         }
     }
 }
 
 .menuBoxLight {
     position: fixed;
-    border-right: 2px solid $new-dark-grey;
+    border-right: 2px solid $dark-version;
     height: 100vh;
     width: 200px;
     z-index: $header-z;
     .click-stick {
-        border: 1px solid $new-dark-grey;
-        background-color: $new-dark-grey;
+        border: 1px solid $dark-version;
+        background-color: $dark-version;
         span {
-            color: $new-dark-grey;
+            color: $dark-version;
         }
         &:hover {
-            border-color: $new-coral;
+            border-color: $light-hover;
             span {
-                color: $new-coral;
+                color: $light-hover;
             }
         }
     }
     .click-stick-active {
-        border: 2px solid $new-dark-grey;
+        border: 2px solid $dark-version;
         span {
-            color: $new-dark-grey;
+            color: $dark-version;
         }
         &:hover {
-            border-color: $new-coral;
+            border-color: $light-hover;
             span {
-                color: $new-coral;
+                color: $light-hover;
             }
         }
     }

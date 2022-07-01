@@ -1,4 +1,25 @@
-@import "./timings";
+@import './timings';
+
+@mixin delayed-backdrop {
+    opacity: 0.2;
+    backdrop-filter: opacity(0.1);
+    -webkit-backdrop-filter: opacity(0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+@mixin delayed-backdrop-reset($transition-time, $opacity-delay-time: 0.3s) {
+    opacity: 1;
+    backdrop-filter: opacity(1);
+    -webkit-backdrop-filter: opacity(1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-transition: backdrop-filter $transition-time ease-in-out
+            $opacity-delay-time,
+        opacity $transition-time ease $opacity-delay-time; /* Safari prior 6.1 */
+    transition: backdrop-filter $transition-time ease-in-out $opacity-delay-time,
+        opacity $transition-time ease $opacity-delay-time;
+}
 
 @mixin y-transition($y-measure, $transition-time) {
     -webkit-transition: transform $transition-time ease-in-out; /* Safari prior 6.1 */
@@ -24,12 +45,17 @@
     will-change: transform;
 }
 
-@mixin x-slide-delayed-opacity-reset($transition-time, $opacity-delay-time: 0.3s) {
+@mixin x-slide-delayed-opacity-reset(
+    $transition-time,
+    $opacity-delay-time: 0.1s
+) {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
-    -webkit-transition: transform $transition-time ease-in-out, opacity $transition-time ease $opacity-delay-time; /* Safari prior 6.1 */
-    transition: transform $transition-time ease-in-out, opacity $transition-time ease $opacity-delay-time;
+    -webkit-transition: transform $transition-time ease-in-out,
+        opacity $transition-time ease $opacity-delay-time; /* Safari prior 6.1 */
+    transition: transform $transition-time ease-in-out,
+        opacity $transition-time ease $opacity-delay-time;
     will-change: transform;
 }
 
@@ -41,12 +67,17 @@
     will-change: transform;
 }
 
-@mixin y-slide-delayed-opacity-reset($transition-time, $opacity-delay-time: 0.3s) {
+@mixin y-slide-delayed-opacity-reset(
+    $transition-time,
+    $opacity-delay-time: 0s
+) {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
-    -webkit-transition: transform $transition-time ease-in-out, opacity $transition-time ease $opacity-delay-time; /* Safari prior 6.1 */
-    transition: transform $transition-time ease-in-out, opacity $transition-time ease $opacity-delay-time;
+    -webkit-transition: transform $transition-time ease-in-out,
+        opacity $transition-time ease $opacity-delay-time; /* Safari prior 6.1 */
+    transition: transform $transition-time ease-in-out,
+        opacity $transition-time ease $opacity-delay-time;
     will-change: transform;
 }
 

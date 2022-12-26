@@ -133,7 +133,7 @@
         padding-top: 15px; // this is needed so text gradient doesn't clip the text
         @include large-topic-desktop;
         color: $new-white;
-        background-image: linear-gradient(180deg, $orange-yellow, $new-aquamarine);
+        background-image: linear-gradient(180deg, $plum-pink, $new-aquamarine);
         filter: drop-shadow(0 1px 0px $new-aquamarine);
         color: $new-white;
         -webkit-text-fill-color: transparent;
